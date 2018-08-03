@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Fateh's Matching game</title>
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Lato:300,400">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Matching Game</h1>
+        </header>
+
+        <!-- score panel section -->
+        <div class="score-panel">
+            <span class="clock">0 : 00</span>
+        	<ul class="stars">
+        		<li><i class="fa fa-star"></i></li>
+        		<li><i class="fa fa-star"></i></li>
+        		<li><i class="fa fa-star"></i></li>
+        	</ul>
+            <span class="moves">0</span>
+            <span class="moves-info"> moves</span>
+            <div class="restart">
+        		<i class="fa fa-repeat"></i>
+        	</div>
+        </div>
+
+        <!-- card section -->
+        <ul class="deck">
+            <li class="card animated">
+                <i class="fa fa-diamond"></i>
+            </li>
+            <li class="card animated">
+                <i class="fa fa-paper-plane-o"></i>
+            </li>
+            <li class="card animated">
+                <i class="fa fa-anchor"></i>
+            </li>
+            <li class="card animated">
+                <i class="fa fa-bolt"></i>
+            </li>
+            <li class="card animated">
+                <i class="fa fa-cube"></i>
+            </li>
+            <li class="card animated">
+                <i class="fa fa-anchor"></i>
+            </li>
+            <li class="card animated">
+                <i class="fa fa-leaf"></i>
+            </li>
+            <li class="card animated">
+                <i class="fa fa-bicycle"></i>
+            </li>
+            <li class="card animated">
+                <i class="fa fa-diamond"></i>
+            </li>
+            <li class="card animated">
+                <i class="fa fa-bomb"></i>
+            </li>
+            <li class="card animated">
+                <i class="fa fa-leaf"></i>
+            </li>
+            <li class="card animated">
+                <i class="fa fa-bomb"></i>
+            </li>
+            <li class="card animated">
+                <i class="fa fa-bolt"></i>
+            </li>
+            <li class="card animated">
+                <i class="fa fa-bicycle"></i>
+            </li>
+            <li class="card animated">
+                <i class="fa fa-paper-plane-o"></i>
+            </li>
+            <li class="card animated">
+                <i class="fa fa-cube"></i>
+            </li>
+        </ul>
+
+        <!-- modal creation-->
+        <div class="dialog hide">
+            <div class="box animated tada faster">
+                <div class="box-body">
+                    <img src = "img/thumbsup.gif" alt="thumbs up">
+                    <h3>Awesome! You Won!!</h3>
+                    <p class="box-info"></p>
+                    <p class="box-star"></p>
+                    <button class="box-replay">Play again?</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- bottom section -->
+        <footer>
+            <p>Crafted with <span>❤</span> as part of the Udacity Nanodegree Program</p>
+            <span>~ Fateh</span>
+        </footer>
+        </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

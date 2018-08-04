@@ -1,3 +1,4 @@
+//globals
 let openCards = [];
 let moves = 0;
 let time = 0;

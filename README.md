@@ -10,3 +10,8 @@
 * Reapeat the process until you find all the matching pairs.
 * Once all matches are found the score and star rating will be displayed.
 * Clicking on 'Play again?' will reset the game to its initial state
+
+ ### Dependencies
+ * googlefonts [link](https://fonts.googleapis.com/css?family=Lato:300,400)
+ * fontawesome [link](https://fontawesome.com/?from=io)
+ * animate.css [link](https://daneden.github.io/animate.css/)

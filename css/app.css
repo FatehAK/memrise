@@ -209,10 +209,3 @@ footer > p {
 footer > p > span {
     color: #d4284a;
 }
-
-footer > span {
-    float: right;
-    padding-right: 15px;
-    font-size: 13px;
-    color: #bb2946;
-}

@@ -1,5 +1,6 @@
 # Memory Game
- This is a browser based card matching game written in Javascript
+ This is a browser based card matching game written in Javascript.
+ 
  You can play the game at https://fatehak.github.io/Memrise
  
  ### How to play

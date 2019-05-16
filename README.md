@@ -1,7 +1,7 @@
 # Memory Game
- This is a browser based card matching game
+ This is a browser based card matching game written in Javascript
+ You can play the game at https://fatehak.github.io/Memrise
  
- You can play the game using this [link](https://fatehak.github.io/Memory-Game/)
  ### How to play
 * Click on a card to flip and reveal its underlying symbol.
 * Click on another card to find a match to the first card.

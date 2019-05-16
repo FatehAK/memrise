@@ -1,4 +1,4 @@
-# Memory Game
+# Memrise
  This is a browser based card matching game written in Javascript. Have a good time building your memory and don't forget to have fun :)
  
  You can play the game at - https://fatehak.github.io/Memrise

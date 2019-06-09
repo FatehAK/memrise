@@ -1,5 +1,5 @@
 # Memrise
- This is a browser based card matching game written in vanilla Javascript. Have a good time building your memory and don't forget to have fun :)
+ Memrise is a browser based card matching game written in vanilla Javascript. Have a good time building your memory and don't forget to have fun :)
  
  You can play the game at - https://memrise.netlify.com
  

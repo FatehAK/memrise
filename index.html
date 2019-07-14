@@ -1,14 +1,16 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <title>Memrise</title>
-    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link rel="icon" href="img/favicon.ico">
     <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Lato:300,400">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/app.css">
 </head>
+
 <body>
 
     <div class="container">
@@ -16,22 +18,22 @@
             <h1>Memory Game</h1>
         </header>
 
-        <!-- score panel section -->
+        <!-- score panel -->
         <div class="score-panel">
             <span class="clock">0 : 00</span>
-        	<ul class="stars">
-        		<li><i class="fa fa-star"></i></li>
-        		<li><i class="fa fa-star"></i></li>
-        		<li><i class="fa fa-star"></i></li>
-        	</ul>
+            <ul class="stars">
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+            </ul>
             <span class="moves">0</span>
             <span class="moves-info"> moves</span>
             <div class="restart">
-        		<i class="fa fa-repeat"></i>
-        	</div>
+                <i class="fa fa-repeat"></i>
+            </div>
         </div>
 
-        <!-- card section -->
+        <!-- cards -->
         <ul class="deck">
             <li class="card animated">
                 <i class="fa fa-diamond"></i>
@@ -83,11 +85,11 @@
             </li>
         </ul>
 
-        <!-- modal creation-->
+        <!-- modal -->
         <div class="dialog hide">
             <div class="box animated tada faster">
                 <div class="box-body">
-                    <img src = "img/thumbsup.gif" alt="thumbs up">
+                    <img src="img/thumbsup.gif" alt="thumbs up">
                     <h3>Awesome! You Won!!</h3>
                     <p class="box-info"></p>
                     <p class="box-star"></p>
@@ -96,12 +98,13 @@
             </div>
         </div>
 
-        <!-- bottom section -->
+        <!-- footer -->
         <footer>
             <p>Crafted with <span>❤</span> by FatehAK</p>
         </footer>
-        </div>
+    </div>
 
     <script src="js/app.js"></script>
 </body>
+
 </html>

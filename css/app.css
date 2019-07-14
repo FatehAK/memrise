@@ -39,10 +39,7 @@ header > h1 {
     margin: 10px 0 25px 0;
 }
 
-/*
- * Styles for the deck of cards
- */
-
+/* card deck */
 .deck {
     display: flex;
     flex-wrap: wrap;
@@ -93,10 +90,7 @@ header > h1 {
     font-size: 33px;
 }
 
-/*
- * Styles for the Score Panel
- */
-
+/* score panel */
 .score-panel {
     font-size: 17px;
     text-align: left;
@@ -108,7 +102,7 @@ header > h1 {
     display: inline-block;
     right: 80px;
     padding-right: 60px;
-    margin: 0px 50px 5px -80px;
+    margin: 0 50px 5px -80px;
     color: #ff0;
 }
 
@@ -142,10 +136,7 @@ li {
     color: #dc143c;
 }
 
-/*
- * Styles for the Modal
- */
-
+/* modal */
 .dialog {
     position: absolute;
     top: 0;
@@ -195,10 +186,7 @@ li {
     cursor: pointer;
 }
 
-/*
- * Styles for the Footer
- */
-
+/* footer */
 footer > p {
     margin-top: 70px;
     font-size: 13px;

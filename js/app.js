@@ -164,7 +164,7 @@ function displayStats() {
     moves++;
     modalInfo.innerHTML = `with ${moves} moves and took ${time} to complete`;
     //reset modalStar to avoid star appending
-    modalStar.innerHTML = "";
+    modalStar.innerHTML = '';
     for (star of stars) {
         if (star.style.display != 'none') {
             //create star elements and add it to the modal

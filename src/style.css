@@ -1,0 +1,197 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background: url('./assets/picture.jpg') no-repeat fixed;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header > h1 {
+  margin: 10px 0 25px 0;
+  padding-bottom: 0;
+  font-size: 34px;
+  letter-spacing: 3px;
+  color: #fff;
+}
+
+/* card deck */
+.deck {
+  width: 660px;
+  min-height: 680px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 3em;
+  padding: 32px;
+  background: #f0fdd8;
+  border-radius: 10px;
+}
+
+.deck .card {
+  width: 125px;
+  height: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0;
+  color: #fff;
+  background: url('./assets/card.jpg');
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+}
+
+.deck .card.open {
+  background: #564775;
+  cursor: default;
+  transform: rotateY(0);
+}
+
+.deck .card.show {
+  font-size: 33px;
+}
+
+.deck .card.match {
+  font-size: 33px;
+  background: #00aa9c;
+  cursor: default;
+}
+
+.deck .card.fixed {
+  font-size: 33px;
+  background: #c45e5e;
+  cursor: default;
+  transform: rotateY(0);
+}
+
+/* score panel */
+.score-panel {
+  width: 345px;
+  margin-bottom: 15px;
+  font-size: 17px;
+  text-align: left;
+}
+
+.score-panel .stars {
+  display: inline-block;
+  right: 80px;
+  margin: 0 50px 5px -80px;
+  padding-right: 60px;
+  color: #ff0;
+}
+
+.score-panel .stars li {
+  display: inline-block;
+  list-style: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.score-panel .clock {
+  position: relative;
+  right: 150px;
+  color: #fff;
+}
+
+.score-panel .moves,
+.moves-info {
+  position: relative;
+  left: 120px;
+  color: #fff;
+}
+
+.score-panel .restart {
+  position: relative;
+  left: 140px;
+  float: right;
+  color: #dc143c;
+  cursor: pointer;
+}
+
+/* modal */
+.dialog {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.hide {
+  display: none;
+}
+
+.dialog .box {
+  width: 550px;
+  height: 380px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background: #fff;
+  border-radius: 12px;
+}
+
+.box-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box-body > h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.box-body .box-replay {
+  width: 100px;
+  height: 40px;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #3e9e79;
+  border-style: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* footer */
+footer > p {
+  margin-top: 70px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #33ac88;
+}
+
+footer > p > span {
+  color: #d4284a;
+}

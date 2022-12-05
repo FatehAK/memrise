@@ -2,6 +2,7 @@
   "name": "memrise",
   "version": "1.0.0",
   "author": "fatehak",
+  "private": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/FatehAK/memrise"
@@ -11,9 +12,14 @@
     "build": "vite build",
     "preview": "vite preview",
     "prettier:check": "prettier --config .prettierrc.js --no-plugin-search -c '**/*.js'",
-    "prettier:fix": "prettier --config .prettierrc.js --no-plugin-search --cache -w '**/*.js'"
+    "prettier:fix": "prettier --config .prettierrc.js --no-plugin-search --cache -w '**/*.js'",
+    "eslint:check": "eslint --cache --cache-strategy content '**/*.js'",
+    "eslint:fix": "pnpm eslint:check --fix"
   },
   "devDependencies": {
+    "eslint": "^8.29.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-semistandard": "^17.0.0",
     "prettier": "^2.8.0",
     "vite": "^3.2.4"
   }

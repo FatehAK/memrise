@@ -6,6 +6,10 @@
     "type": "git",
     "url": "https://github.com/FatehAK/memrise"
   },
+  "scripts": {
+    "format:check": "prettier --find-config-path --no-plugin-search -c '**/*.js'",
+    "format": "prettier --find-config-path --no-plugin-search --cache -w '**/*.js'"
+  },
   "devDependencies": {
     "prettier": "^2.8.0"
   }

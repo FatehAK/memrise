@@ -20,5 +20,4 @@ module.exports = {
       },
     ],
   },
-  ignoreFiles: ['.idea/', '.vscode/'],
 };

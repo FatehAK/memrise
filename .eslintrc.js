@@ -5,13 +5,13 @@ module.exports = {
     browser: true,
     node: true,
   },
-  extends: ['semistandard', 'prettier'],
+  extends: ['semistandard', 'plugin:sonarjs/recommended', 'prettier'],
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
   rules: {},
-  plugins: ['html', '@html-eslint'],
+  plugins: ['sonarjs', 'html', '@html-eslint'],
   overrides: [
     {
       files: ['*.html'],

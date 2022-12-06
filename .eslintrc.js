@@ -12,4 +12,5 @@ module.exports = {
   },
   plugins: [],
   rules: {},
+  ignorePatterns: ['.idea/', '.vscode/'],
 };

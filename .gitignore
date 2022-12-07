@@ -14,8 +14,9 @@ pids
 *.pid.lock
 
 # Dependency directories
-node_modules/
+node_modules
 .pnp.*
+.pnpm-store/
 
 # compiled output
 /dist

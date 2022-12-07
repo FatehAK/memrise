@@ -22,9 +22,6 @@
     "prepare": "husky install",
     "lint-staged": "lint-staged"
   },
-  "husky": {
-    "hooks": {}
-  },
   "devDependencies": {
     "@html-eslint/eslint-plugin": "^0.15.0",
     "@html-eslint/parser": "^0.15.0",

@@ -10,7 +10,9 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  rules: {},
+  rules: {
+    'sonarjs/no-duplicate-string': 'off',
+  },
   plugins: ['sonarjs', 'promise', 'html', '@html-eslint'],
   overrides: [
     {

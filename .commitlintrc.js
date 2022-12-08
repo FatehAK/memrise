@@ -1,0 +1,41 @@
+module.exports = {
+  rules: {
+    'type-enum': [
+      2,
+      'always',
+      ['feat', 'fix', 'docs', 'style', 'refactor', 'perf', 'test', 'build', 'ci', 'chore', 'revert'],
+    ],
+    'type-case': [2, 'always', 'lower-case'],
+    'type-empty': [2, 'never'],
+    'scope-case': [2, 'always', 'lower-case'],
+    'subject-empty': [2, 'never'],
+    'subject-full-stop': [2, 'never', '.'],
+    'subject-max-length': [2, 'always', 100],
+  },
+  prompt: {
+    messages: {
+      type: 'Type of change:',
+      scope: 'Scope (optional):',
+      customScope: 'New Scope:',
+      subject: 'Commit Message:',
+      confirmCommit: 'Confirm Commit ?',
+    },
+    types: [
+      { value: 'feat', name: 'feat:      ✨  New feature', emoji: ':sparkles:' },
+      { value: 'fix', name: 'fix:       🐛  Bug fix', emoji: ':bug:' },
+      { value: 'docs', name: 'docs:      📝  Documentation', emoji: ':memo:' },
+      { value: 'style', name: 'style:     💄  Styling', emoji: ':lipstick:' },
+      { value: 'refactor', name: 'refactor:  ♻️   Refactoring', emoji: ':recycle:' },
+      { value: 'perf', name: 'perf:      ⚡️  Performance', emoji: ':zap:' },
+      { value: 'test', name: 'test:      ✅  Testing', emoji: ':white_check_mark:' },
+      { value: 'build', name: 'build:     📦️  Build and deps', emoji: ':package:' },
+      { value: 'ci', name: 'ci:        🎡  CI', emoji: ':ferris_wheel:' },
+      { value: 'chore', name: 'chore:     🔨  Other changes', emoji: ':hammer:' },
+      { value: 'revert', name: 'revert:    ⏪️  Reverts previous commit', emoji: ':rewind:' },
+    ],
+    useEmoji: true,
+    upperCaseSubject: true,
+    customScopesAlias: 'new',
+    skipQuestions: ['body', 'breaking', 'footerPrefix', 'footer'],
+  },
+};

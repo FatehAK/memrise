@@ -33,6 +33,9 @@ logs
 *.log
 .pnpm-debug.log*
 
+# Reports
+build-stats.html
+
 # System Files
 .DS_Store
 Thumbs.db

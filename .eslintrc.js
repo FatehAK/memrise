@@ -5,7 +5,13 @@ module.exports = {
     browser: true,
     node: true,
   },
-  extends: ['semistandard', 'plugin:sonarjs/recommended', 'plugin:promise/recommended', 'prettier'],
+  extends: [
+    'semistandard',
+    'plugin:import/recommended',
+    'plugin:sonarjs/recommended',
+    'plugin:promise/recommended',
+    'prettier',
+  ],
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
@@ -13,7 +19,7 @@ module.exports = {
   rules: {
     'sonarjs/no-duplicate-string': 'off',
   },
-  plugins: ['sonarjs', 'promise', 'html', '@html-eslint'],
+  plugins: ['import', 'sonarjs', 'promise', 'html', '@html-eslint'],
   overrides: [
     {
       files: ['*.html'],
@@ -45,4 +51,11 @@ module.exports = {
       },
     },
   ],
+  settings: {
+    'import/resolver': {
+      alias: {
+        map: [['@', './src']],
+      },
+    },
+  },
 };

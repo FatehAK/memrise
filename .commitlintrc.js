@@ -18,7 +18,6 @@ module.exports = {
       scope: 'Scope (optional):',
       customScope: 'New Scope:',
       subject: 'Commit Message:',
-      confirmCommit: 'Confirm Commit ?',
     },
     types: [
       { value: 'feat', name: 'feat:      ✨  New feature', emoji: '✨' },
@@ -36,6 +35,6 @@ module.exports = {
     useEmoji: true,
     upperCaseSubject: true,
     customScopesAlias: 'new',
-    skipQuestions: ['body', 'breaking', 'footerPrefix', 'footer'],
+    skipQuestions: ['body', 'breaking', 'footerPrefix', 'footer', 'confirmCommit'],
   },
 };

@@ -14,8 +14,8 @@
     "analyze": "pnpm build && open ./build-stats.html",
     "lint": "run-p -c prettier-check stylelint-check eslint-check",
     "lint-fix": "pnpm prettier-fix && pnpm stylelint-fix && pnpm eslint-fix",
-    "prettier-check": "prettier --find-config-path --check .",
-    "prettier-fix": "prettier --find-config-path --cache --cache-strategy content --write .",
+    "prettier-check": "prettier --find-config-path --ignore-unknown --check .",
+    "prettier-fix": "prettier --find-config-path --ignore-unknown --cache --cache-strategy content --write .",
     "eslint-check": "eslint --cache --cache-strategy content '**/*.{html,js}'",
     "eslint-fix": "pnpm eslint-check --fix",
     "stylelint-check": "stylelint --aei --cache --cache-strategy content '**/*.{html,css}'",
@@ -50,7 +50,8 @@
     "stylelint-config-standard": "^29.0.0",
     "stylelint-declaration-block-no-ignored-properties": "^2.6.0",
     "stylelint-order": "^5.0.0",
-    "vite": "^4.0.0"
+    "vite": "^4.0.0",
+    "vite-plugin-imagemin": "^0.6.1"
   },
   "engines": {
     "pnpm": ">=7"

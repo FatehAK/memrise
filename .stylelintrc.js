@@ -5,6 +5,7 @@ propertyOrder.rules['order/properties-order'][1].unspecified = 'bottom';
 propertyOrder.rules['order/properties-order'][1].emptyLineMinimumPropertyThreshold = 25;
 
 module.exports = {
+  defaultSeverity: 'warning',
   reportDescriptionlessDisables: true,
   extends: ['stylelint-config-standard', 'stylelint-config-html', 'stylelint-config-prettier'],
   plugins: ['stylelint-declaration-block-no-ignored-properties', 'stylelint-order'],

@@ -22,19 +22,13 @@ node_modules
 /dist
 /build
 
-# eslint cache
-.eslintcache
-
-# stylelint cache
-.stylelintcache
-
 # Logs
 logs
 *.log
 .pnpm-debug.log*
 
 # Reports
-build-stats.html
+reports
 
 # System Files
 .DS_Store

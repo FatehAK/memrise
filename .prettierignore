@@ -2,5 +2,5 @@ node_modules
 dist
 .idea
 .vscode
-build-stats.html
+reports
 pnpm-lock.yaml

@@ -19,7 +19,7 @@ module.exports = {
   rules: {
     'sonarjs/no-duplicate-string': 'off',
   },
-  plugins: ['import', 'sonarjs', 'promise', 'html', '@html-eslint'],
+  plugins: ['only-warn', 'import', 'sonarjs', 'promise', 'html', '@html-eslint'],
   overrides: [
     {
       files: ['*.html'],

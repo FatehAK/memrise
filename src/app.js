@@ -9,7 +9,7 @@
 
   const deck = document.querySelector('.deck');
   deck.addEventListener('click', cardClick, false);
-  console.log('# 1');
+  console.log('# 2');
 
   // handle clicks on the card
   function cardClick(event) {

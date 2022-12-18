@@ -1,4 +1,4 @@
-(() => {
+(function () {
   let openCards = [];
   let moves = 0;
   let time = 0;
@@ -39,8 +39,7 @@
   // toggle the card classes on click
   function cardToggle(card) {
     card.classList.toggle('open');
-    card.classList.toggle('show');
-    card.classList.toggle('flipInY');
+    card.classList.toggle('animate__flipInY');
   }
 
   // handle cards when match is found
@@ -50,13 +49,13 @@
       openCards[0].classList.toggle('match');
       openCards[1].classList.toggle('match');
       // remove animations added earlier
-      openCards[0].classList.remove('flipInY');
-      openCards[1].classList.remove('flipInY');
-      openCards[0].classList.remove('shake');
-      openCards[1].classList.remove('shake');
+      openCards[0].classList.remove('animate__flipInY');
+      openCards[1].classList.remove('animate__flipInY');
+      openCards[0].classList.remove('animate__shakeX');
+      openCards[1].classList.remove('animate__shakeX');
       // add animation to matched cards
-      openCards[0].classList.add('rubberBand');
-      openCards[1].classList.add('rubberBand');
+      openCards[0].classList.add('animate__rubberBand');
+      openCards[1].classList.add('animate__rubberBand');
       openCards = [];
       // increment matched for each card pair matched
       matched++;
@@ -64,8 +63,8 @@
       // no match found
       setTimeout(function () {
         // add animation to unmatched cards
-        openCards[0].classList.add('shake');
-        openCards[1].classList.add('shake');
+        openCards[0].classList.add('animate__shakeX');
+        openCards[1].classList.add('animate__shakeX');
         openCards[0].classList.add('fixed');
         openCards[1].classList.add('fixed');
         // toggle cards classes again
@@ -73,6 +72,8 @@
         cardToggle(openCards[1]);
       }, 1000);
       setTimeout(function () {
+        openCards[0].classList.remove('animate__shakeX');
+        openCards[1].classList.remove('animate__shakeX');
         openCards[0].classList.remove('fixed');
         openCards[1].classList.remove('fixed');
         // empty the array before new cards are added
@@ -208,7 +209,7 @@
     // reset card state
     const cards = document.querySelectorAll('.deck li');
     for (const card of cards) {
-      card.className = 'card animated';
+      card.className = 'card animate__animated';
     }
     // shuffle cards on reset
     cardShuffle();

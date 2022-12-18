@@ -51,7 +51,6 @@
     "eslint-plugin-sonarjs": "^0.17.0",
     "husky": "^8.0.2",
     "lint-staged": "^13.1.0",
-    "postcss-combine-duplicated-selectors": "^10.0.3",
     "postcss-html": "^1.5.0",
     "postcss-nested": "^6.0.0",
     "postcss-preset-env": "^7.8.3",

@@ -72,7 +72,7 @@ export default defineConfig(({ mode }) => {
           assetFileNames: 'assets/[name].[hash].[ext]',
         },
         plugins: [
-          strip(),
+          isProd && strip(),
           visualizer({
             filename: 'reports/build-stats.html',
             gzipSize: true,

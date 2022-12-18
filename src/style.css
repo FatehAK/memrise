@@ -1,17 +1,10 @@
-html {
-  box-sizing: border-box;
+@import 'sanitize.css';
+
+li {
+  list-style-type: none;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-html,
-body {
-  width: 100%;
-  height: 100%;
+ul {
   margin: 0;
   padding: 0;
 }
@@ -26,11 +19,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
 header > h1 {
-  margin: 10px 0 25px;
+  margin-top: 15px;
+  margin-bottom: 40px;
   padding-bottom: 0;
   font-size: 34px;
   color: #fff;
@@ -39,25 +32,23 @@ header > h1 {
 
 /* card deck */
 .deck {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  width: 660px;
-  min-height: 680px;
-  margin: 0 0 3em;
-  padding: 32px;
+  display: grid;
+  grid-template-columns: repeat(4, 120px);
+  grid-template-rows: repeat(4, 120px);
+  gap: 28px;
+  margin: 0;
+  padding: 30px;
   background: #f0fdd8;
   border-radius: 10px;
 }
 
-.deck .card {
+.card {
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 125px;
-  height: 125px;
+  width: 100%;
+  height: 100%;
   font-size: 0;
   color: #fff;
   background: url('./assets/card.jpg');
@@ -65,20 +56,20 @@ header > h1 {
   box-shadow: 5px 2px 20px 0 rgb(46 61 73 / 50%);
 }
 
-.deck .card.open {
+.card.open {
   cursor: default;
   transform: rotateY(0);
   font-size: 33px;
   background: #564775;
 }
 
-.deck .card.match {
+.card.match {
   cursor: default;
   font-size: 33px;
   background: #00aa9c;
 }
 
-.deck .card.fixed {
+.card.fixed {
   cursor: default;
   transform: rotateY(0);
   font-size: 33px;
@@ -87,47 +78,34 @@ header > h1 {
 
 /* score panel */
 .score-panel {
-  width: 345px;
-  margin-bottom: 15px;
-  font-size: 17px;
-  text-align: left;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+  font-size: 16px;
 }
 
 .score-panel .stars {
-  right: 80px;
   display: inline-block;
-  margin: 0 50px 5px -80px;
-  padding-right: 60px;
   color: #ff0;
-}
-
-li {
-  list-style-type: none;
 }
 
 .score-panel .stars li {
   display: inline-block;
-  list-style: none;
 }
 
 .score-panel .clock {
-  position: relative;
-  right: 150px;
   color: #fff;
 }
 
 .score-panel .moves,
 .moves-info {
-  position: relative;
-  left: 120px;
   color: #fff;
 }
 
 .score-panel .restart {
   cursor: pointer;
-  position: relative;
-  left: 140px;
-  float: right;
   color: #dc143c;
 }
 
@@ -135,9 +113,12 @@ li {
 .dialog {
   position: absolute;
   top: 0;
+  right: 0;
+  bottom: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: rgb(0 0 0 / 45%);
 }
 
@@ -146,14 +127,10 @@ li {
 }
 
 .dialog .box {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 550px;
-  height: 380px;
-  margin: auto;
+  width: 100%;
+  max-width: 450px;
+  margin: 10px;
+  padding-bottom: 15px;
   background: #fff;
   border-radius: 12px;
 }
@@ -171,24 +148,63 @@ li {
 
 .box-body .box-replay {
   cursor: pointer;
-  width: 100px;
-  height: 40px;
-  margin-top: 20px;
+  padding: 10px 16px;
   font-size: 14px;
   color: #fff;
   background-color: #3e9e79;
   border-style: none;
-  border-radius: 8px;
+  border-radius: 6px;
 }
 
 /* footer */
+footer {
+  position: fixed;
+  bottom: 10px;
+}
+
 footer > p {
-  margin-top: 70px;
-  font-size: 13px;
+  font-size: 12px;
   color: #33ac88;
   letter-spacing: 1px;
 }
 
 footer > p > span {
   color: #d4284a;
+}
+
+/* tablets */
+@media screen and (max-width: 900px) {
+  .deck {
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    gap: 24px;
+    padding: 24px;
+  }
+
+  .card.open,
+  .card.match,
+  .card.fixed {
+    font-size: 28px;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 600px) {
+  header > h1 {
+    margin-bottom: 50px;
+    font-size: 26px;
+  }
+
+  .deck {
+    grid-template-columns: repeat(4, 64px);
+    grid-template-rows: repeat(4, 64px);
+    gap: 16px;
+    padding: 16px;
+  }
+
+  .card.open,
+  .card.match,
+  .card.fixed {
+    font-size: 20px;
+  }
 }

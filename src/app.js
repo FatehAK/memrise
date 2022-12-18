@@ -177,7 +177,7 @@
         // create star elements and add it to the modal
         const starElement = document.createElement('I');
         starElement.className = 'fa fa-star';
-        starElement.style.fontSize = '34px';
+        starElement.style.fontSize = '32px';
         starElement.style.color = '#f0f000';
         modalStar.appendChild(starElement);
       }

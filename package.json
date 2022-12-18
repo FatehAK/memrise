@@ -30,6 +30,9 @@
     "defaults and supports es6-module",
     "maintained node versions"
   ],
+  "dependencies": {
+    "sanitize.css": "^13.0.0"
+  },
   "devDependencies": {
     "@commitlint/cli": "^17.3.0",
     "@html-eslint/eslint-plugin": "^0.15.0",

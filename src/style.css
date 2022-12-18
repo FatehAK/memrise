@@ -68,11 +68,8 @@ header > h1 {
 .deck .card.open {
   cursor: default;
   transform: rotateY(0);
-  background: #564775;
-}
-
-.deck .card.show {
   font-size: 33px;
+  background: #564775;
 }
 
 .deck .card.match {

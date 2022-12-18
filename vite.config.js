@@ -30,6 +30,7 @@ export default defineConfig(({ mode }) => {
         removeRedundantAttributes: true,
       }),
       viteImagemin({
+        verbose: false,
         gifsicle: false,
         optipng: false,
         jpegTran: false,
@@ -65,6 +66,11 @@ export default defineConfig(({ mode }) => {
       target: getTargetBrowsers(),
       sourcemap: isProd ? 'hidden' : true,
       rollupOptions: {
+        output: {
+          entryFileNames: '[name].[hash].js',
+          chunkFileNames: 'chunks/[name].[hash].js',
+          assetFileNames: 'assets/[name].[hash].[ext]',
+        },
         plugins: [
           strip(),
           visualizer({

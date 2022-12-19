@@ -1,8 +1,8 @@
 # Memrise
 
-Memrise is a browser based card matching game written in vanilla Javascript. Have a good time building your memory and don't forget to have fun :)
+Memrise is a card matching game written in Vanilla Javascript with PWA support. Have a good time building your memory and don't forget to have fun :)
 
-You can play the game at - https://memrise.netlify.com
+You can play the game at - https://memrise.pages.dev
 
 ### How to play
 
@@ -14,8 +14,12 @@ You can play the game at - https://memrise.netlify.com
 - Once all matches are found the score and star rating will be displayed.
 - Clicking on 'Play again?' will reset the game to its initial state
 
-### Dependencies
+### Tech Used
 
-- googlefonts [link](https://fonts.googleapis.com/css?family=Lato:300,400)
-- fontawesome [link](https://fontawesome.com/?from=io)
-- animate.css [link](https://daneden.github.io/animate.css/)
+- Vanilla Javascript
+- Workbox for PWA support
+- Vite for bundling
+- Prettier, Stylelint, Eslint for formatting and linting
+- Husky, lint-staged, commitlint for clean linted commits
+- Github Actions for CI/CD
+- Cloudflare Pages for publishing

@@ -130,6 +130,7 @@ export const PWA_CONFIG = {
     start_url: '.',
     orientation: 'any',
     display: 'standalone',
+    includeAssets: ['favicon.ico', 'robots.txt', 'apple-touch-icon.png'],
     icons: [
       {
         src: '/icon.png',
@@ -149,7 +150,7 @@ export const PWA_CONFIG = {
   workbox: {
     cleanupOutdatedCaches: true,
     maximumFileSizeToCacheInBytes: 4194304,
-    globPatterns: ['**/*.{css,js,html,svg,png,webp,ico,woff2}'],
+    globPatterns: ['**/*.{css,js,html,svg,png,gif,webp,woff2}'],
     runtimeCaching: [
       {
         urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,

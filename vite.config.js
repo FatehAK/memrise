@@ -3,9 +3,12 @@ import { defineConfig } from 'vite';
 import legacy from '@vitejs/plugin-legacy';
 import viteImagemin from 'vite-plugin-imagemin';
 import { ViteMinifyPlugin as viteHTMLMinify } from 'vite-plugin-minify';
+import { VitePWA as vitePWAPlugin } from 'vite-plugin-pwa';
 import strip from '@rollup/plugin-strip';
 import { visualizer } from 'rollup-plugin-visualizer';
+import viteHTMLConfig from 'vite-plugin-html-config';
 import getTargetBrowsers from 'browserslist-to-esbuild';
+import { META_TAGS, PWA_CONFIG } from './appConfig';
 
 export default defineConfig(({ mode }) => {
   const isProd = mode === 'production';
@@ -15,6 +18,7 @@ export default defineConfig(({ mode }) => {
     resolve: {
       alias: {
         '@': resolve(__dirname, 'src'),
+        appConfig: resolve(__dirname, './appConfig'),
       },
     },
     plugins: [
@@ -23,6 +27,7 @@ export default defineConfig(({ mode }) => {
         modernPolyfills: [],
         renderLegacyChunks: false,
       }),
+      viteHTMLConfig({ metas: META_TAGS }),
       viteHTMLMinify({
         sortAttributes: true,
         removeStyleLinkTypeAttributes: true,
@@ -54,6 +59,7 @@ export default defineConfig(({ mode }) => {
           ],
         },
       }),
+      vitePWAPlugin(PWA_CONFIG),
     ],
     preview: { open: true },
     server: {

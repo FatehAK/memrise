@@ -11,7 +11,6 @@ module.exports = {
   plugins: ['stylelint-declaration-block-no-ignored-properties', 'stylelint-order'],
   rules: {
     ...propertyOrder.rules,
-    'import-notation': null,
     'plugin/declaration-block-no-ignored-properties': true,
     'custom-property-empty-line-before': 'never',
     'comment-empty-line-before': [

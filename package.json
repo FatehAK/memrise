@@ -70,8 +70,10 @@
     "stylelint-order": "^5.0.0",
     "terser": "^5.16.1",
     "vite": "^4.0.0",
+    "vite-plugin-html-config": "^1.0.11",
     "vite-plugin-imagemin": "^0.6.1",
     "vite-plugin-minify": "^1.5.2",
+    "vite-plugin-pwa": "^0.14.0",
     "wrangler": "^2.6.2"
   },
   "engines": {

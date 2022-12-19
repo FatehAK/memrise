@@ -30,7 +30,7 @@ module.exports = {
         '@html-eslint/indent': ['error', 2],
         '@html-eslint/require-meta-charset': 'error',
         '@html-eslint/require-meta-viewport': 'error',
-        '@html-eslint/require-meta-description': 'error',
+        '@html-eslint/require-meta-description': 'off',
         '@html-eslint/require-button-type': 'error',
         '@html-eslint/element-newline': 'off',
         '@html-eslint/no-target-blank': 'error',
@@ -54,7 +54,10 @@ module.exports = {
   settings: {
     'import/resolver': {
       alias: {
-        map: [['@', './src']],
+        map: [
+          ['@', './src'],
+          ['appConfig', './appConfig'],
+        ],
       },
     },
   },

@@ -150,7 +150,6 @@ export const PWA_CONFIG = {
   workbox: {
     cleanupOutdatedCaches: true,
     maximumFileSizeToCacheInBytes: 4194304,
-    globPatterns: ['**/*.{css,js,html,svg,png,gif,webp,woff2}'],
     runtimeCaching: [
       {
         urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,

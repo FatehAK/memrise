@@ -27,7 +27,7 @@ module.exports = {
       extends: ['plugin:@html-eslint/recommended'],
       rules: {
         'spaced-comment': 'off',
-        '@html-eslint/indent': ['error', 2],
+        '@html-eslint/indent': 'off',
         '@html-eslint/require-meta-charset': 'error',
         '@html-eslint/require-meta-viewport': 'error',
         '@html-eslint/require-meta-description': 'off',

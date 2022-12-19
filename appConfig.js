@@ -108,10 +108,6 @@ export const META_TAGS = [
     name: 'apple-mobile-web-app-status-bar-style',
     content: 'black-translucent',
   },
-  {
-    name: 'apple-mobile-web-app-status-bar-style',
-    content: 'black-translucent',
-  },
   // PWA
   {
     name: 'theme-color',

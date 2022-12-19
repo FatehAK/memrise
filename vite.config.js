@@ -28,12 +28,13 @@ export default defineConfig(({ mode }) => {
         renderLegacyChunks: false,
       }),
       viteHTMLConfig({ metas: META_TAGS }),
-      viteHTMLMinify({
-        sortAttributes: true,
-        removeStyleLinkTypeAttributes: true,
-        removeScriptTypeAttributes: true,
-        removeRedundantAttributes: true,
-      }),
+      isProd &&
+        viteHTMLMinify({
+          sortAttributes: true,
+          removeStyleLinkTypeAttributes: true,
+          removeScriptTypeAttributes: true,
+          removeRedundantAttributes: true,
+        }),
       viteImagemin({
         verbose: false,
         gifsicle: false,

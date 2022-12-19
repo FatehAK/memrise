@@ -128,7 +128,6 @@ export const PWA_CONFIG = {
     background_color: APP_CONFIG.META.app.background,
     theme_color: APP_CONFIG.META.app.background,
     start_url: '.',
-    orientation: 'any',
     display: 'standalone',
     icons: [
       {
@@ -149,50 +148,5 @@ export const PWA_CONFIG = {
   workbox: {
     cleanupOutdatedCaches: true,
     maximumFileSizeToCacheInBytes: 4194304,
-    globPatterns: ['**/*.{css,js,html,svg,png,webp,ico,woff2}'],
-    runtimeCaching: [
-      {
-        urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,
-        handler: 'CacheFirst',
-        options: {
-          cacheName: 'google-fonts-cache',
-          expiration: {
-            maxEntries: 10,
-            maxAgeSeconds: 60 * 60 * 24 * 365, // <== 365 days
-          },
-          cacheableResponse: {
-            statuses: [0, 200],
-          },
-        },
-      },
-      {
-        urlPattern: /^https:\/\/fonts\.gstatic\.com\/.*/i,
-        handler: 'CacheFirst',
-        options: {
-          cacheName: 'gstatic-fonts-cache',
-          expiration: {
-            maxEntries: 10,
-            maxAgeSeconds: 60 * 60 * 24 * 365, // <== 365 days
-          },
-          cacheableResponse: {
-            statuses: [0, 200],
-          },
-        },
-      },
-      {
-        urlPattern: /^https:\/\/cdnjs\.cloudflare\.com\/.*/i,
-        handler: 'NetworkFirst',
-        options: {
-          cacheName: 'cloudflare-cdn-cache',
-          expiration: {
-            maxEntries: 10,
-            maxAgeSeconds: 60 * 60 * 24 * 7, // <== 7 days
-          },
-          cacheableResponse: {
-            statuses: [0, 200],
-          },
-        },
-      },
-    ],
   },
 };

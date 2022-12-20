@@ -106,7 +106,7 @@ export const META_TAGS = [
   },
   {
     name: 'apple-mobile-web-app-status-bar-style',
-    content: 'default',
+    content: 'black',
   },
   // PWA
   {
@@ -139,7 +139,7 @@ export const PWA_CONFIG = {
         purpose: 'any maskable',
       },
       {
-        src: '/icon.svg',
+        src: '/logo.svg',
         sizes: '48x48 72x72 96x96 128x128 256x256 512x512',
         type: 'image/svg+xml',
         purpose: 'any maskable',

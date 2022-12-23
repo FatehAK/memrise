@@ -1,12 +1,12 @@
 import { resolve } from 'path';
 import { defineConfig } from 'vite';
-import legacy from '@vitejs/plugin-legacy';
-import viteImagemin from 'vite-plugin-imagemin';
-import { ViteMinifyPlugin as viteHTMLMinify } from 'vite-plugin-minify';
-import { VitePWA as vitePWAPlugin } from 'vite-plugin-pwa';
+import ViteLegacy from '@vitejs/plugin-legacy';
+import { ViteMinifyPlugin } from 'vite-plugin-minify';
+import { VitePWA } from 'vite-plugin-pwa';
+import ViteHTMLConfig from 'vite-plugin-html-config';
+import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 import strip from '@rollup/plugin-strip';
 import { visualizer } from 'rollup-plugin-visualizer';
-import viteHTMLConfig from 'vite-plugin-html-config';
 import getTargetBrowsers from 'browserslist-to-esbuild';
 import { META_TAGS, PWA_CONFIG } from './appConfig';
 
@@ -22,45 +22,22 @@ export default defineConfig(({ mode }) => {
       },
     },
     plugins: [
-      legacy({
+      ViteLegacy({
         // inject polyfills here for modern features if needed
         modernPolyfills: [],
         renderLegacyChunks: false,
       }),
-      viteHTMLConfig({ metas: META_TAGS }),
+      ViteHTMLConfig({ metas: META_TAGS }),
       isProd &&
-        viteHTMLMinify({
+        ViteMinifyPlugin({
+          // only used to minify html files
           sortAttributes: true,
           removeStyleLinkTypeAttributes: true,
           removeScriptTypeAttributes: true,
           removeRedundantAttributes: true,
         }),
-      viteImagemin({
-        verbose: false,
-        gifsicle: false,
-        optipng: false,
-        jpegTran: false,
-        svgo: {
-          multipass: true,
-          plugins: [
-            {
-              name: 'preset-default',
-              params: {
-                overrides: {
-                  removeViewBox: false, // https://github.com/svg/svgo/issues/1128
-                  addAttributesToSVGElement: {
-                    params: {
-                      attributes: [{ xmlns: 'http://www.w3.org/2000/svg' }],
-                    },
-                  },
-                },
-              },
-            },
-            'sortAttrs',
-          ],
-        },
-      }),
-      vitePWAPlugin(PWA_CONFIG),
+      VitePWA(PWA_CONFIG),
+      ViteImageOptimizer(),
     ],
     preview: { open: true },
     server: {

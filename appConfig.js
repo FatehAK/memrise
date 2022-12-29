@@ -11,6 +11,7 @@ export const APP_CONFIG = {
       twitter: '@Fateh_AK_',
     },
   },
+  CLOUDFLARE_ANALYTICS_TOKEN: '9c2a66de92e84a38a387f978e0be99dc',
   PROD_BASE_URL: 'https://memrise.pages.dev',
 };
 

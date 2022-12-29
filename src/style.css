@@ -1,5 +1,24 @@
 @import url('sanitize.css');
 
+:root {
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Lato, sans-serif;
+}
+
 li {
   list-style-type: none;
 }
@@ -10,7 +29,6 @@ ul {
 }
 
 body {
-  font-family: Lato, sans-serif;
   background: url('./images/background.jpg') no-repeat fixed;
   background-size: cover;
 }

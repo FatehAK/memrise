@@ -15,7 +15,7 @@
     "analyze": "open ./reports/build-stats.html",
     "clean": "pnpm rimraf reports dist node_modules/.vite node_modules/.cache",
     "lint": "concurrently -g -n \"prettier,stylelint,eslint\" -c \"bgGreen.bold,bgMagenta.bold,bgBlue.bold\" \"pnpm prettier-check\" \"pnpm stylelint-check\" \"pnpm eslint-check\"",
-    "lint:fix": "pnpm prettier-fix && pnpm stylelint-fix && pnpm eslint-fix",
+    "lint:fix": "pnpm eslint-fix && pnpm stylelint-fix && pnpm prettier-fix",
     "prettier-check": "prettier --loglevel warn --cache --cache-strategy content --cache-location ./node_modules/.cache/.prettiercache --check .",
     "prettier-fix": "prettier --loglevel warn --cache --cache-strategy content --cache-location ./node_modules/.cache/.prettiercache --write .",
     "stylelint-check": "stylelint --max-warnings=25 --custom-formatter=node_modules/stylelint-formatter-pretty --aei --cache --cache-strategy content --cache-location ./node_modules/.cache/.stylelintcache '{**/*,*}.{html,css}'",
@@ -40,6 +40,7 @@
     "@rollup/plugin-strip": "^3.0.2",
     "@vitejs/plugin-legacy": "^3.0.1",
     "browserslist-to-esbuild": "^1.2.0",
+    "change-case": "^4.1.2",
     "concurrently": "^7.6.0",
     "czg": "1.4.1",
     "eslint": "^8.30.0",
@@ -79,7 +80,6 @@
     "wrangler": "^2.6.2"
   },
   "engines": {
-    "pnpm": ">=7.21.0",
     "node": ">=18"
   },
   "packageManager": "pnpm@7.21.0"

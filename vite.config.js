@@ -1,14 +1,15 @@
 import { resolve } from 'path';
-import { defineConfig } from 'vite';
+import { defineConfig, splitVendorChunkPlugin as ViteVendorChunkSplit } from 'vite';
 import ViteLegacy from '@vitejs/plugin-legacy';
+import ViteHTMLConfig from 'vite-plugin-html-config';
 import { ViteMinifyPlugin } from 'vite-plugin-minify';
 import { VitePWA } from 'vite-plugin-pwa';
-import ViteHTMLConfig from 'vite-plugin-html-config';
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 import strip from '@rollup/plugin-strip';
 import { visualizer } from 'rollup-plugin-visualizer';
 import getTargetBrowsers from 'browserslist-to-esbuild';
-import { META_TAGS, PWA_CONFIG } from './appConfig';
+import { paramCase } from 'change-case';
+import { META_TAGS, PWA_CONFIG, APP_CONFIG } from './appConfig';
 
 export default defineConfig(({ mode }) => {
   const isProd = mode === 'production';
@@ -17,17 +18,27 @@ export default defineConfig(({ mode }) => {
   return {
     resolve: {
       alias: {
-        '@': resolve(__dirname, 'src'),
         appConfig: resolve(__dirname, './appConfig'),
       },
     },
     plugins: [
+      ViteVendorChunkSplit(),
       ViteLegacy({
         // inject polyfills here for modern features if needed
         modernPolyfills: [],
         renderLegacyChunks: false,
       }),
-      ViteHTMLConfig({ metas: META_TAGS }),
+      ViteHTMLConfig({
+        metas: META_TAGS,
+        ...(isProd && {
+          scripts: [
+            {
+              defer: true,
+              src: `https://static.cloudflareinsights.com/beacon.min.js?token=${APP_CONFIG.CLOUDFLARE_ANALYTICS_TOKEN}`,
+            },
+          ],
+        }),
+      }),
       isProd &&
         ViteMinifyPlugin({
           // only used to minify html files
@@ -52,8 +63,8 @@ export default defineConfig(({ mode }) => {
       rollupOptions: {
         output: {
           entryFileNames: '[name].[hash].js',
-          chunkFileNames: 'chunks/[name].[hash].js',
-          assetFileNames: 'assets/[name].[hash].[ext]',
+          chunkFileNames: file => `chunks/${paramCase(file.name)}.[hash].js`,
+          assetFileNames: file => `assets/${paramCase(file.name.split('.')[0])}.[hash].[ext]`,
         },
         plugins: [
           isProd && strip(),

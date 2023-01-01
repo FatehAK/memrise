@@ -3,8 +3,6 @@ on:
     branches:
       - '**'
       - '!main'
-    paths-ignore:
-      - '*.md'
 
 name: deploy_dev
 
@@ -92,6 +90,5 @@ jobs:
           branch: develop
 
       - run: |
-          echo "Deployed to ${{ steps.cfp.outputs.url }}" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "env: ${{ steps.cfp.outputs.environment }}" >> $GITHUB_STEP_SUMMARY
+          echo "Deployed to ${{ steps.cfp.outputs.environment }} environment" >> $GITHUB_STEP_SUMMARY

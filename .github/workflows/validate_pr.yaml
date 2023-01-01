@@ -1,9 +1,9 @@
 on:
-  push:
+  pull_request:
     branches:
       - main
 
-name: deploy_prod
+name: validate_pr
 
 jobs:
   lint:
@@ -38,11 +38,9 @@ jobs:
       - name: Run lint
         run: pnpm lint
 
-  publish:
-    name: Build and publish
+  Build:
+    name: Build
     needs: lint
-    concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}-${{ github.job }}
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -76,29 +74,3 @@ jobs:
           path: reports/build-stats.html
           if-no-files-found: ignore
           retention-days: 30
-
-      - name: Expose prod artifacts
-        uses: actions/upload-artifact@v3
-        with:
-          name: Sourcemaps
-          path: |
-            dist/**/*.map
-            !dist/**/workbox*.map
-            !dist/**/sw*.map
-          if-no-files-found: ignore
-          retention-days: 30
-
-      - name: Publish to Cloudflare Pages
-        uses: cloudflare/pages-action@1
-        id: cfp
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-          projectName: memrise
-          directory: dist
-          branch: main
-
-      - run: |
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "Deployed to ${{ steps.cfp.outputs.environment }} environment" >> $GITHUB_STEP_SUMMARY

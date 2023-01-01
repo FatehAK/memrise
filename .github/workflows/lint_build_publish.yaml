@@ -27,7 +27,6 @@ jobs:
           echo "node: $(node -v)"
           echo "npm: $(npm -v)"
           echo "pnpm: $(pnpm -v)"
-          echo "branch: $BRANCH_NAME"
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
@@ -64,7 +63,6 @@ jobs:
 
       - name: Cache build
         uses: actions/cache@v3
-        id: cache-build
         with:
           path: dist
           key: ${{ github.sha }}-${{ github.run_number }}
@@ -102,7 +100,6 @@ jobs:
 
       - name: Restore Build
         uses: actions/cache@v3
-        id: restore-build
         with:
           path: dist
           key: ${{ github.sha }}-${{ github.run_number }}

@@ -1,9 +1,12 @@
 on:
   push:
     branches:
-      - main
+      - '**'
 
-name: deploy_prod
+env:
+  BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
+
+name: lint_build_publish
 
 jobs:
   lint:
@@ -24,6 +27,7 @@ jobs:
           echo "node: $(node -v)"
           echo "npm: $(npm -v)"
           echo "pnpm: $(pnpm -v)"
+          echo "branch: $BRANCH_NAME"
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
@@ -38,15 +42,10 @@ jobs:
       - name: Run lint
         run: pnpm lint
 
-  publish:
-    name: Build and publish
+  build:
+    name: Build
     needs: lint
-    concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}-${{ github.job }}
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      deployments: write
     steps:
       - uses: actions/checkout@v3
       - uses: pnpm/action-setup@v2
@@ -57,27 +56,28 @@ jobs:
           node-version-file: '.nvmrc'
           cache: 'pnpm'
 
-      - name: Dump versions
-        run: |
-          echo "node: $(node -v)"
-          echo "npm: $(npm -v)"
-          echo "pnpm: $(pnpm -v)"
-
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
       - name: Build
-        run: pnpm build:prod
+        run: ${{ env.BRANCH_NAME == 'main' && 'pnpm build:prod' || 'pnpm build:dev' }}
+
+      - name: Cache build
+        uses: actions/cache@v3
+        id: cache-build
+        with:
+          path: dist
+          key: ${{ github.sha }}-${{ github.run_number }}
 
       - name: Expose build report
         uses: actions/upload-artifact@v3
         with:
           name: Build Stats
           path: reports/build-stats.html
-          if-no-files-found: ignore
-          retention-days: 30
+          retention-days: ${{ env.BRANCH_NAME == 'main' && 30 || 7 }}
 
-      - name: Expose prod artifacts
+      - name: Expose sourcemaps
+        if: ${{ env.BRANCH_NAME == 'main' }}
         uses: actions/upload-artifact@v3
         with:
           name: Sourcemaps
@@ -88,6 +88,25 @@ jobs:
           if-no-files-found: ignore
           retention-days: 30
 
+  publish:
+    name: Publish
+    needs: build
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}-${{ github.job }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Restore Build
+        uses: actions/cache@v3
+        id: restore-build
+        with:
+          path: dist
+          key: ${{ github.sha }}-${{ github.run_number }}
+
       - name: Publish to Cloudflare Pages
         uses: cloudflare/pages-action@1
         id: cfp
@@ -97,7 +116,6 @@ jobs:
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
           projectName: memrise
           directory: dist
-          branch: main
 
       - run: |
           echo "" >> $GITHUB_STEP_SUMMARY

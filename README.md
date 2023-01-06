@@ -1,9 +1,13 @@
 <div align="center">
-  <h2>Memrise</h2>
+  <a href="https://memrise.pages.dev/">
+    <img width="180" height="180" hspace="10"
+      src="https://memrise.pages.dev/logo.svg" alt="memrise logo">
+  </a>
+  <h1>Memrise</h1>
   <img src="https://img.shields.io/github/package-json/v/fatehak/memrise" alt="version" />
 <img src="https://img.shields.io/github/package-json/dependency-version/fatehak/memrise/dev/vite" alt="vite" />
 <img src="https://img.shields.io/badge/pnpm-latest-yellow" alt="pnpm" />
-  <img src="https://img.shields.io/github/actions/workflow/status/fatehak/memrise/deploy_prod.yaml?branch=main" alt="build status" />
+  <img src="https://img.shields.io/github/actions/workflow/status/fatehak/memrise/lint_build_publish.yaml?branch=main" alt="build status" />
 </div>
 
 Memrise is a card matching game written in Vanilla Javascript with PWA support. Have a good time building your memory and don't forget to have fun :)

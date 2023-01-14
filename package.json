@@ -58,7 +58,7 @@
     "postcss-html": "^1.5.0",
     "postcss-nested": "^6.0.0",
     "postcss-preset-env": "^7.8.3",
-    "prettier": "^2.8.2",
+    "prettier": "^2.8.3",
     "rimraf": "^3.0.2",
     "rollup-plugin-visualizer": "^5.9.0",
     "sharp": "^0.31.3",
@@ -81,5 +81,5 @@
   "engines": {
     "node": ">=18"
   },
-  "packageManager": "pnpm@7.24.3"
+  "packageManager": "pnpm@7.25.0"
 }

@@ -50,11 +50,11 @@ export default defineConfig(({ mode }) => {
       VitePWA(PWA_CONFIG),
       ViteImageOptimizer(),
     ],
-    preview: { open: true },
+    preview: { open: true, port: 4000 },
     server: {
       open: true,
+      host: true,
       port: 3000,
-      hmr: { overlay: false },
     },
     build: {
       minify: isProd ? 'esbuild' : false,

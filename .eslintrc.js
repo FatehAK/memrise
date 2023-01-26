@@ -20,6 +20,7 @@ module.exports = {
     'import/prefer-default-export': 'off',
     'no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
     'sort-imports': 'off', // turned off in favour of import/order rule
+    'import/no-unresolved': ['error', { ignore: ['^virtual:'] }],
     'import/order': [
       'error',
       {

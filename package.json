@@ -43,7 +43,7 @@
     "change-case": "^4.1.2",
     "concurrently": "^7.6.0",
     "czg": "1.4.1",
-    "eslint": "^8.33.0",
+    "eslint": "^8.34.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-config-semistandard": "^17.0.0",
     "eslint-formatter-pretty": "^4.1.0",
@@ -65,7 +65,7 @@
     "stylelint": "^14.16.1",
     "stylelint-config-clean-order": "^2.3.1",
     "stylelint-config-html": "^1.1.0",
-    "stylelint-config-prettier": "^9.0.4",
+    "stylelint-config-prettier": "^9.0.5",
     "stylelint-config-standard": "^29.0.0",
     "stylelint-declaration-block-no-ignored-properties": "^2.6.0",
     "stylelint-formatter-pretty": "^3.1.1",
@@ -76,7 +76,7 @@
     "vite-plugin-html-config": "^1.0.11",
     "vite-plugin-image-optimizer": "^1.0.8",
     "vite-plugin-minify": "^1.5.2",
-    "vite-plugin-pwa": "^0.14.3"
+    "vite-plugin-pwa": "^0.14.4"
   },
   "engines": {
     "node": ">=18"

@@ -40,13 +40,21 @@ body {
 }
 
 header > h1 {
+  display: flex;
+  align-items: center;
   margin-top: 15px;
   margin-bottom: 40px;
   padding-bottom: 0;
   font-family: Lato, sans-serif;
   font-size: 34px;
   color: #fff;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
+}
+
+header > h1 > img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
 }
 
 /* card deck */
@@ -213,6 +221,11 @@ footer > p > span {
   header > h1 {
     margin-bottom: 50px;
     font-size: 26px;
+  }
+
+  header > h1 > img {
+    width: 24px;
+    height: 24px;
   }
 
   .deck {

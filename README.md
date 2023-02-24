@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://memrise.pages.dev/">
-    <img width="180" height="180" hspace="10"
+    <img width="120" height="160" hspace="10"
       src="https://memrise.pages.dev/logo.svg" alt="memrise logo">
   </a>
   <h1>Memrise</h1>

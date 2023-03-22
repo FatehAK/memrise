@@ -42,7 +42,7 @@
     "browserslist-to-esbuild": "^1.2.0",
     "change-case": "^4.1.2",
     "concurrently": "^7.6.0",
-    "czg": "1.6.0",
+    "czg": "1.6.1",
     "eslint": "^8.36.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-config-semistandard": "^17.0.0",
@@ -75,7 +75,7 @@
     "vite-plugin-html-config": "^1.0.11",
     "vite-plugin-image-optimizer": "^1.1.2",
     "vite-plugin-minify": "^1.5.2",
-    "vite-plugin-pwa": "^0.14.4"
+    "vite-plugin-pwa": "^0.14.5"
   },
   "engines": {
     "node": ">=18"

@@ -9,7 +9,7 @@ specifiers:
   browserslist-to-esbuild: ^1.2.0
   change-case: ^4.1.2
   concurrently: ^7.6.0
-  czg: 1.6.0
+  czg: 1.6.1
   eslint: ^8.36.0
   eslint-config-prettier: ^8.8.0
   eslint-config-semistandard: ^17.0.0
@@ -43,7 +43,7 @@ specifiers:
   vite-plugin-html-config: ^1.0.11
   vite-plugin-image-optimizer: ^1.1.2
   vite-plugin-minify: ^1.5.2
-  vite-plugin-pwa: ^0.14.4
+  vite-plugin-pwa: ^0.14.5
 
 dependencies:
   sanitize.css: 13.0.0
@@ -57,7 +57,7 @@ devDependencies:
   browserslist-to-esbuild: 1.2.0
   change-case: 4.1.2
   concurrently: 7.6.0
-  czg: 1.6.0
+  czg: 1.6.1
   eslint: 8.36.0
   eslint-config-prettier: 8.8.0_eslint@8.36.0
   eslint-config-semistandard: 17.0.0_5ejimrbnrp4lr3vckxupihvblq
@@ -90,7 +90,7 @@ devDependencies:
   vite-plugin-html-config: 1.0.11_vite@4.2.1
   vite-plugin-image-optimizer: 1.1.2_vite@4.2.1
   vite-plugin-minify: 1.5.2_vite@4.2.1
-  vite-plugin-pwa: 0.14.4_h7yo2zok6ssdtcsppnnx4hllne
+  vite-plugin-pwa: 0.14.5_h7yo2zok6ssdtcsppnnx4hllne
 
 packages:
 
@@ -2947,8 +2947,8 @@ packages:
       css-tree: 2.2.1
     dev: true
 
-  /czg/1.6.0:
-    resolution: {integrity: sha512-bFAXzGUrwanQ/VDL+s6zhoXxZbZNHCoAF0R2VAaHoFNpyAFeOrQ66TLP7FydaRsnXdBzRazfN+BUVdKUkyoHGw==}
+  /czg/1.6.1:
+    resolution: {integrity: sha512-F6xzZ+ooLqCOLdsT7miEZRInaTjoglY5CjT5Hc4Yg9gxwLS2zjfUUFGvemVgUZI+ggzFAHE6VL0PA+4ukbOWgQ==}
     hasBin: true
     dev: true
 
@@ -6613,8 +6613,8 @@ packages:
       vite: 4.2.1_67ayhxtn77ihpqz7ip4pro4g64
     dev: true
 
-  /vite-plugin-pwa/0.14.4_h7yo2zok6ssdtcsppnnx4hllne:
-    resolution: {integrity: sha512-M7Ct0so8OlouMkTWgXnl8W1xU95glITSKIe7qswZf1tniAstO2idElGCnsrTJ5NPNSx1XqfTCOUj8j94S6FD7Q==}
+  /vite-plugin-pwa/0.14.5_h7yo2zok6ssdtcsppnnx4hllne:
+    resolution: {integrity: sha512-LH3VCtoWx0scfim8Ph+daVl45uVRyWzXn3C3GUq92uWUui1p8eh+DjTQ23Pvb7SJ0SJtxZ99LCpOLCkFkaxokg==}
     peerDependencies:
       vite: ^3.1.0 || ^4.0.0
       workbox-build: ^6.5.4

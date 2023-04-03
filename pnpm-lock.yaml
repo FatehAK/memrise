@@ -35,7 +35,7 @@ specifiers:
   stylelint-config-html: ^1.1.0
   stylelint-config-standard: ^30.0.1
   stylelint-declaration-block-no-ignored-properties: ^2.7.0
-  stylelint-formatter-pretty: ^3.1.1
+  stylelint-formatter-pretty: ^3.2.0
   stylelint-order: ^6.0.3
   svgo: ^3.0.2
   terser: ^5.16.8
@@ -82,7 +82,7 @@ devDependencies:
   stylelint-config-html: 1.1.0_4i3jeu7aznyfktsaj5a2mymbyu
   stylelint-config-standard: 30.0.1_stylelint@15.4.0
   stylelint-declaration-block-no-ignored-properties: 2.7.0_stylelint@15.4.0
-  stylelint-formatter-pretty: 3.1.1
+  stylelint-formatter-pretty: 3.2.0
   stylelint-order: 6.0.3_stylelint@15.4.0
   svgo: 3.0.2
   terser: 5.16.8
@@ -6200,8 +6200,8 @@ packages:
       stylelint: 15.4.0
     dev: true
 
-  /stylelint-formatter-pretty/3.1.1:
-    resolution: {integrity: sha512-sHsbwd/AzzKnldARIQkjDj6L5tGNOBs5vfIhMz40oLSaV+GW2RNYKYoqxtt6cgLf91OURXu0tI/l0fbQw7EVrg==}
+  /stylelint-formatter-pretty/3.2.0:
+    resolution: {integrity: sha512-qUGdmJIKFcNamAgkf/I0NraOxlLqclSoAmBameWNR5EsOvm0Kwy2iMYi5z9hbQhFaCZ+TWSbwHmkB6XNbJWrQw==}
     engines: {node: '>=14'}
     dependencies:
       ansi-escapes: 4.3.2
@@ -6209,6 +6209,7 @@ packages:
       picocolors: 1.0.0
       plur: 4.0.0
       string-width: 4.2.3
+      supports-hyperlinks: 3.0.0
     dev: true
 
   /stylelint-order/6.0.3_stylelint@15.4.0:

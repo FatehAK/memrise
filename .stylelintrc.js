@@ -13,6 +13,7 @@ module.exports = {
     ...propertyOrder.rules,
     'plugin/declaration-block-no-ignored-properties': true,
     'custom-property-empty-line-before': 'never',
+    'media-feature-range-notation': 'prefix',
     'comment-empty-line-before': [
       'always',
       {

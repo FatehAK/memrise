@@ -5,7 +5,7 @@ specifiers:
   '@html-eslint/eslint-plugin': ^0.19.0
   '@html-eslint/parser': ^0.19.0
   '@rollup/plugin-strip': ^3.0.2
-  '@vitejs/plugin-legacy': ^4.0.3
+  '@vitejs/plugin-legacy': ^4.0.4
   browserslist-to-esbuild: ^1.2.0
   change-case: ^4.1.2
   concurrently: ^8.0.1
@@ -41,9 +41,9 @@ specifiers:
   terser: ^5.17.6
   vite: ^4.3.8
   vite-plugin-html-config: ^1.0.11
-  vite-plugin-image-optimizer: ^1.1.4
+  vite-plugin-image-optimizer: ^1.1.5
   vite-plugin-minify: ^1.5.2
-  vite-plugin-pwa: ^0.15.0
+  vite-plugin-pwa: ^0.15.1
 
 dependencies:
   sanitize.css: 13.0.0
@@ -53,7 +53,7 @@ devDependencies:
   '@html-eslint/eslint-plugin': 0.19.0
   '@html-eslint/parser': 0.19.0
   '@rollup/plugin-strip': 3.0.2_rollup@2.79.1
-  '@vitejs/plugin-legacy': 4.0.3_terser@5.17.6+vite@4.3.8
+  '@vitejs/plugin-legacy': 4.0.4_terser@5.17.6+vite@4.3.8
   browserslist-to-esbuild: 1.2.0
   change-case: 4.1.2
   concurrently: 8.0.1
@@ -88,9 +88,9 @@ devDependencies:
   terser: 5.17.6
   vite: 4.3.8_uloo3m473b5mnujvc6hrz2tmwa
   vite-plugin-html-config: 1.0.11_vite@4.3.8
-  vite-plugin-image-optimizer: 1.1.4_vite@4.3.8
+  vite-plugin-image-optimizer: 1.1.5_vite@4.3.8
   vite-plugin-minify: 1.5.2_vite@4.3.8
-  vite-plugin-pwa: 0.15.0_r7qigfydcfixp4ydda7oeefecy
+  vite-plugin-pwa: 0.15.1_r7qigfydcfixp4ydda7oeefecy
 
 packages:
 
@@ -2283,8 +2283,8 @@ packages:
     resolution: {integrity: sha512-NfQ4gyz38SL8sDNrSixxU2Os1a5xcdFxipAFxYEuLUlvU2uDwS4NUpsImcf1//SlWItCVMMLiylsxbmNMToV/g==}
     dev: true
 
-  /@vitejs/plugin-legacy/4.0.3_terser@5.17.6+vite@4.3.8:
-    resolution: {integrity: sha512-RqDQOSEmFSNL42vITkNp8HE8Ak1yjGgaav4B6BGcZ8/URK0wikzwSyhNRirHDkp+snflEEk7iPZXTXUYA9exbg==}
+  /@vitejs/plugin-legacy/4.0.4_terser@5.17.6+vite@4.3.8:
+    resolution: {integrity: sha512-UwVfkMfUEszbQ2vs3RDfiDxxvYnIjmtIrGxTnxRev5Sh8ZoDpieV2dwvTUB7zXKJpfRsOgimM6MxQ65VDHJeQw==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       terser: ^5.4.0
@@ -6682,8 +6682,8 @@ packages:
       vite: 4.3.8_uloo3m473b5mnujvc6hrz2tmwa
     dev: true
 
-  /vite-plugin-image-optimizer/1.1.4_vite@4.3.8:
-    resolution: {integrity: sha512-DgJ6OwbF5QJgFfPEP2mvx3a8xCJUb5As1rVVY+S/5m8+x9D9lFivWy6bGxjweyskzY0qpEp8ITLfivypaQ49eQ==}
+  /vite-plugin-image-optimizer/1.1.5_vite@4.3.8:
+    resolution: {integrity: sha512-AiN3ztY6mC/YDaTjzXWdPCaN+Hf2nXSGuC8oyJZad3sx6IDvROYJtKM5Hh8403gzVRWma69GZBgiIzskSF6Ztg==}
     engines: {node: '>=14'}
     peerDependencies:
       vite: '>=3'
@@ -6702,8 +6702,8 @@ packages:
       vite: 4.3.8_uloo3m473b5mnujvc6hrz2tmwa
     dev: true
 
-  /vite-plugin-pwa/0.15.0_r7qigfydcfixp4ydda7oeefecy:
-    resolution: {integrity: sha512-gpmx3BeubsRIXRBkjPToOTJbo8fknNmZFQs24i0TPZyaNVa0n27YHDo0Y72amnO70WvHKGE3e1fn8SYUP7e8SA==}
+  /vite-plugin-pwa/0.15.1_r7qigfydcfixp4ydda7oeefecy:
+    resolution: {integrity: sha512-lJVzEYda/Y9AfwxFzX0rV+QCQ2+WdBoEGtR1RBZKWxvrJ4NWEH1VZaHOMyzvRiYhWQsi7aFhewsp1CDvN/R1Og==}
     peerDependencies:
       vite: ^3.1.0 || ^4.0.0
       workbox-build: ^6.5.4

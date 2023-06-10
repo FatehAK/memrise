@@ -27,7 +27,7 @@ specifiers:
   postcss-preset-env: ^8.4.2
   prettier: ^2.8.8
   rimraf: ^5.0.1
-  rollup-plugin-visualizer: ^5.9.0
+  rollup-plugin-visualizer: ^5.9.2
   sanitize.css: ^13.0.0
   sharp: ^0.32.1
   stylelint: ^15.7.0
@@ -75,7 +75,7 @@ devDependencies:
   postcss-preset-env: 8.4.2_postcss@8.4.24
   prettier: 2.8.8
   rimraf: 5.0.1
-  rollup-plugin-visualizer: 5.9.0_rollup@2.79.1
+  rollup-plugin-visualizer: 5.9.2_rollup@2.79.1
   sharp: 0.32.1
   stylelint: 15.7.0
   stylelint-config-clean-order: 5.0.1_stylelint@15.7.0
@@ -5860,8 +5860,8 @@ packages:
       terser: 5.17.7
     dev: true
 
-  /rollup-plugin-visualizer/5.9.0_rollup@2.79.1:
-    resolution: {integrity: sha512-bbDOv47+Bw4C/cgs0czZqfm8L82xOZssk4ayZjG40y9zbXclNk7YikrZTDao6p7+HDiGxrN0b65SgZiVm9k1Cg==}
+  /rollup-plugin-visualizer/5.9.2_rollup@2.79.1:
+    resolution: {integrity: sha512-waHktD5mlWrYFrhOLbti4YgQCn1uR24nYsNuXxg7LkPH8KdTXVWR9DNY1WU0QqokyMixVXJS4J04HNrVTMP01A==}
     engines: {node: '>=14'}
     hasBin: true
     peerDependencies:

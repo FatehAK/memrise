@@ -24,7 +24,7 @@ specifiers:
   lint-staged: ^13.2.2
   postcss-html: ^1.5.0
   postcss-nested: ^6.0.1
-  postcss-preset-env: ^8.4.2
+  postcss-preset-env: ^8.5.0
   prettier: ^2.8.8
   rimraf: ^5.0.1
   rollup-plugin-visualizer: ^5.9.2
@@ -72,7 +72,7 @@ devDependencies:
   lint-staged: 13.2.2
   postcss-html: 1.5.0
   postcss-nested: 6.0.1_postcss@8.4.24
-  postcss-preset-env: 8.4.2_postcss@8.4.24
+  postcss-preset-env: 8.5.0_postcss@8.4.24
   prettier: 2.8.8
   rimraf: 5.0.1
   rollup-plugin-visualizer: 5.9.2_rollup@2.79.1
@@ -1744,8 +1744,8 @@ packages:
       postcss-value-parser: 4.2.0
     dev: true
 
-  /@csstools/postcss-relative-color-syntax/1.0.1_postcss@8.4.24:
-    resolution: {integrity: sha512-IskxdQqAkx/pyyOEW3Lhn3nvOu5zlaZ8wQljFl5zc3ABl+gEFf2G42yWK3+wX+J0F4jm7OikOigXo9fAISFEmg==}
+  /@csstools/postcss-relative-color-syntax/1.0.2_postcss@8.4.24:
+    resolution: {integrity: sha512-juCoVInkgH2TZPfOhyx6tIal7jW37L/0Tt+Vcl1LoxqQA9sxcg3JWYZ98pl1BonDnki6s/M7nXzFQHWsWMeHgw==}
     engines: {node: ^14 || ^16 || >=18}
     peerDependencies:
       postcss: ^8.4
@@ -5404,8 +5404,8 @@ packages:
       postcss-selector-parser: 6.0.13
     dev: true
 
-  /postcss-nesting/11.2.2_postcss@8.4.24:
-    resolution: {integrity: sha512-aOTiUniAB1bcPE6GGiynWRa6PZFPhOTAm5q3q5cem6QeSijIHHkWr6gs65ukCZMXeak8yXeZVbBJET3VM+HlhA==}
+  /postcss-nesting/11.3.0_postcss@8.4.24:
+    resolution: {integrity: sha512-JlS10AQm/RzyrUGgl5irVkAlZYTJ99mNueUl+Qab+TcHhVedLiylWVkKBhRale+rS9yWIJK48JVzQlq3LcSdeA==}
     engines: {node: ^14 || ^16 || >=18}
     peerDependencies:
       postcss: ^8.4
@@ -5452,8 +5452,8 @@ packages:
       postcss-value-parser: 4.2.0
     dev: true
 
-  /postcss-preset-env/8.4.2_postcss@8.4.24:
-    resolution: {integrity: sha512-Bihxo+FsyVNjsRADiYYnj9Ez0WBSWSSHAe8WvxoMlqrw8H8m6gK9E0MkDd7P6ForoikRIF3I8grGg/pFM6ECRQ==}
+  /postcss-preset-env/8.5.0_postcss@8.4.24:
+    resolution: {integrity: sha512-aqAbT5dXqYX5ZvicGKQpaW/eDEZFRfnhV6Hn1Jn2bCKEB9L2MgsTdnIsXsZyFUQflIV2wIs9HTEQgkH5duMCNg==}
     engines: {node: ^14 || ^16 || >=18}
     peerDependencies:
       postcss: ^8.4
@@ -5475,7 +5475,7 @@ packages:
       '@csstools/postcss-normalize-display-values': 2.0.1_postcss@8.4.24
       '@csstools/postcss-oklab-function': 2.2.3_postcss@8.4.24
       '@csstools/postcss-progressive-custom-properties': 2.3.0_postcss@8.4.24
-      '@csstools/postcss-relative-color-syntax': 1.0.1_postcss@8.4.24
+      '@csstools/postcss-relative-color-syntax': 1.0.2_postcss@8.4.24
       '@csstools/postcss-scope-pseudo-class': 2.0.2_postcss@8.4.24
       '@csstools/postcss-stepped-value-functions': 2.1.1_postcss@8.4.24
       '@csstools/postcss-text-decoration-shorthand': 2.2.4_postcss@8.4.24
@@ -5506,7 +5506,7 @@ packages:
       postcss-initial: 4.0.1_postcss@8.4.24
       postcss-lab-function: 5.2.3_postcss@8.4.24
       postcss-logical: 6.2.0_postcss@8.4.24
-      postcss-nesting: 11.2.2_postcss@8.4.24
+      postcss-nesting: 11.3.0_postcss@8.4.24
       postcss-opacity-percentage: 2.0.0_postcss@8.4.24
       postcss-overflow-shorthand: 4.0.1_postcss@8.4.24
       postcss-page-break: 3.0.4_postcss@8.4.24

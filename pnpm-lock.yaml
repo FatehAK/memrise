@@ -21,7 +21,7 @@ specifiers:
   eslint-plugin-promise: ^6.1.1
   eslint-plugin-sonarjs: ^0.19.0
   husky: ^8.0.3
-  lint-staged: ^13.2.2
+  lint-staged: ^13.2.3
   postcss-html: ^1.5.0
   postcss-nested: ^6.0.1
   postcss-preset-env: ^8.5.1
@@ -69,7 +69,7 @@ devDependencies:
   eslint-plugin-promise: 6.1.1_eslint@8.43.0
   eslint-plugin-sonarjs: 0.19.0_eslint@8.43.0
   husky: 8.0.3
-  lint-staged: 13.2.2
+  lint-staged: 13.2.3
   postcss-html: 1.5.0
   postcss-nested: 6.0.1_postcss@8.4.24
   postcss-preset-env: 8.5.1_postcss@8.4.24
@@ -4574,8 +4574,8 @@ packages:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
     dev: true
 
-  /lint-staged/13.2.2:
-    resolution: {integrity: sha512-71gSwXKy649VrSU09s10uAT0rWCcY3aewhMaHyl2N84oBk4Xs9HgxvUp3AYu+bNsK4NrOYYxvSgg7FyGJ+jGcA==}
+  /lint-staged/13.2.3:
+    resolution: {integrity: sha512-zVVEXLuQIhr1Y7R7YAWx4TZLdvuzk7DnmrsTNL0fax6Z3jrpFcas+vKbzxhhvp6TA55m1SQuWkpzI1qbfDZbAg==}
     engines: {node: ^14.13.1 || >=16.0.0}
     hasBin: true
     dependencies:

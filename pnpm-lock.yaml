@@ -2,8 +2,8 @@ lockfileVersion: 5.4
 
 specifiers:
   '@commitlint/cli': ^17.6.7
-  '@html-eslint/eslint-plugin': ^0.19.0
-  '@html-eslint/parser': ^0.19.0
+  '@html-eslint/eslint-plugin': ^0.19.1
+  '@html-eslint/parser': ^0.19.1
   '@rollup/plugin-strip': ^3.0.2
   '@vitejs/plugin-legacy': ^4.1.1
   browserslist-to-esbuild: ^1.2.0
@@ -50,8 +50,8 @@ dependencies:
 
 devDependencies:
   '@commitlint/cli': 17.6.7
-  '@html-eslint/eslint-plugin': 0.19.0
-  '@html-eslint/parser': 0.19.0
+  '@html-eslint/eslint-plugin': 0.19.1
+  '@html-eslint/parser': 0.19.1
   '@rollup/plugin-strip': 3.0.2_rollup@2.79.1
   '@vitejs/plugin-legacy': 4.1.1_terser@5.19.2+vite@4.4.6
   browserslist-to-esbuild: 1.2.0
@@ -2087,16 +2087,16 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /@html-eslint/eslint-plugin/0.19.0:
-    resolution: {integrity: sha512-4B22mEGaUUJYJQYK8cSpo/And0bHVdZ5t0ph1NCGYmyGwz7SU3nfNFtv9j22IQSYJ0gAf0PEiDyXKpBRygtCcg==}
+  /@html-eslint/eslint-plugin/0.19.1:
+    resolution: {integrity: sha512-Tn+/GWLtNM6NiZFLbfM+vTK0d7gKaDgnw4Pp+DsZi09lFimi4bOPOgy8dSVnLeyFIfP6LkeuwVm4pfBZZM2qbA==}
     engines: {node: '>=8.10.0'}
     dev: true
 
-  /@html-eslint/parser/0.19.0:
-    resolution: {integrity: sha512-BkBt6bShQ9vzvK6++mQ4W4qcMCAZ4RawcxOe8K0kR4VARebqMfcco645enajlyyTrr+F9jEXRMXEoHcsWkHjvA==}
+  /@html-eslint/parser/0.19.1:
+    resolution: {integrity: sha512-dpAw6UX0ZSVNnsAzl9ULHZX7CvAGKF5uta4iebbhSDvGE1o9NX6BoOofD/6WucTvs/qnoKojc3Y2LG6vy4afiQ==}
     engines: {node: '>=8.10.0'}
     dependencies:
-      es-html-parser: 0.0.8
+      es-html-parser: 0.0.9
     dev: true
 
   /@humanwhocodes/config-array/0.11.10:
@@ -3368,8 +3368,8 @@ packages:
       which-typed-array: 1.1.9
     dev: true
 
-  /es-html-parser/0.0.8:
-    resolution: {integrity: sha512-kjMH23xhvTBw/7Ve1Dtb/7yZdFajfvwOpdsgRHmnyt8yvTsDJnkFjUgEEaMZFW+e1OhN/eoZrvF9wehq+waTGg==}
+  /es-html-parser/0.0.9:
+    resolution: {integrity: sha512-oniQMi+466VFsDzcdron9Ry/sqUJpDJg1bbDn0jFJKDdxXhwIOYDr4DgBnO5/yPLGj2xv+n5yy4L1Q0vAC5TYQ==}
     dev: true
 
   /es-set-tostringtag/2.0.1:

@@ -43,7 +43,7 @@
     "change-case": "^4.1.2",
     "concurrently": "^8.2.1",
     "czg": "1.7.1",
-    "eslint": "^8.48.0",
+    "eslint": "^8.49.0",
     "eslint-config-prettier": "^8.10.0",
     "eslint-config-semistandard": "^17.0.0",
     "eslint-formatter-pretty": "^5.0.0",
@@ -75,7 +75,7 @@
     "vite-plugin-html-config": "^1.0.11",
     "vite-plugin-image-optimizer": "^1.1.7",
     "vite-plugin-minify": "^1.5.2",
-    "vite-plugin-pwa": "^0.16.4"
+    "vite-plugin-pwa": "^0.16.5"
   },
   "engines": {
     "node": ">=18"

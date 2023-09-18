@@ -29,7 +29,7 @@ specifiers:
   rimraf: ^5.0.1
   rollup-plugin-visualizer: ^5.9.2
   sanitize.css: ^13.0.0
-  sharp: ^0.32.5
+  sharp: ^0.32.6
   stylelint: ^15.10.3
   stylelint-config-clean-order: ^5.2.0
   stylelint-config-html: ^1.1.0
@@ -76,7 +76,7 @@ devDependencies:
   prettier: 2.8.8
   rimraf: 5.0.1
   rollup-plugin-visualizer: 5.9.2_rollup@2.79.1
-  sharp: 0.32.5
+  sharp: 0.32.6
   stylelint: 15.10.3_typescript@5.2.2
   stylelint-config-clean-order: 5.2.0_stylelint@15.10.3
   stylelint-config-html: 1.1.0_a6l2rvr7enkswjarqif24xxgi4
@@ -6034,8 +6034,8 @@ packages:
       has-property-descriptors: 1.0.0
     dev: true
 
-  /sharp/0.32.5:
-    resolution: {integrity: sha512-0dap3iysgDkNaPOaOL4X/0akdu0ma62GcdC2NBQ+93eqpePdDdr2/LM0sFdDSMmN7yS+odyZtPsb7tx/cYBKnQ==}
+  /sharp/0.32.6:
+    resolution: {integrity: sha512-KyLTWwgcR9Oe4d9HwCwNM2l7+J0dUQwn/yf7S0EnTtb0eVS4RxO0eUSvxPtzT4F3SY+C4K6fqdv/DO27sJ/v/w==}
     engines: {node: '>=14.15.0'}
     requiresBuild: true
     dependencies:

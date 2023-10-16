@@ -38,7 +38,7 @@ specifiers:
   stylelint-formatter-pretty: ^3.2.1
   stylelint-order: ^6.0.3
   svgo: ^3.0.2
-  terser: ^5.21.0
+  terser: ^5.22.0
   vite: ^4.4.11
   vite-plugin-html-config: ^1.0.11
   vite-plugin-image-optimizer: ^1.1.7
@@ -53,7 +53,7 @@ devDependencies:
   '@html-eslint/eslint-plugin': 0.19.1
   '@html-eslint/parser': 0.19.1
   '@rollup/plugin-strip': 3.0.4_rollup@2.79.1
-  '@vitejs/plugin-legacy': 4.1.1_terser@5.21.0+vite@4.4.11
+  '@vitejs/plugin-legacy': 4.1.1_terser@5.22.0+vite@4.4.11
   browserslist-to-esbuild: 1.2.0
   change-case: 4.1.2
   concurrently: 8.2.1
@@ -85,8 +85,8 @@ devDependencies:
   stylelint-formatter-pretty: 3.2.1
   stylelint-order: 6.0.3_stylelint@15.10.3
   svgo: 3.0.2
-  terser: 5.21.0
-  vite: 4.4.11_7fui6gdtt5tas67dqlf45pkpcy
+  terser: 5.22.0
+  vite: 4.4.11_pm563silht3rqck2p53k3oh3ha
   vite-plugin-html-config: 1.0.11_vite@4.4.11
   vite-plugin-image-optimizer: 1.1.7_vite@4.4.11
   vite-plugin-minify: 1.5.2_vite@4.4.11
@@ -2303,7 +2303,7 @@ packages:
     resolution: {integrity: sha512-IDaobHimLQhjwsQ/NMwRVfa/yL7L/wriQPMhw1ZJall0KX6E1oxk29XMDeilW5qTIg5aoiqf5Udy8U/51aNoQQ==}
     dev: true
 
-  /@vitejs/plugin-legacy/4.1.1_terser@5.21.0+vite@4.4.11:
+  /@vitejs/plugin-legacy/4.1.1_terser@5.22.0+vite@4.4.11:
     resolution: {integrity: sha512-um3gbVouD2Q/g19C0qpDfHwveXDCAHzs8OC3e9g6aXpKoD1H14himgs7wkMnhAynBJy7QqUoZNAXDuqN8zLR2g==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
@@ -2317,8 +2317,8 @@ packages:
       magic-string: 0.30.5
       regenerator-runtime: 0.13.11
       systemjs: 6.14.2
-      terser: 5.21.0
-      vite: 4.4.11_7fui6gdtt5tas67dqlf45pkpcy
+      terser: 5.22.0
+      vite: 4.4.11_pm563silht3rqck2p53k3oh3ha
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -4158,7 +4158,7 @@ packages:
       he: 1.2.0
       param-case: 3.0.4
       relateurl: 0.2.7
-      terser: 5.21.0
+      terser: 5.22.0
     dev: true
 
   /html-tags/3.3.1:
@@ -5912,7 +5912,7 @@ packages:
       jest-worker: 26.6.2
       rollup: 2.79.1
       serialize-javascript: 4.0.0
-      terser: 5.21.0
+      terser: 5.22.0
     dev: true
 
   /rollup-plugin-visualizer/5.9.2_rollup@2.79.1:
@@ -6577,8 +6577,8 @@ packages:
       unique-string: 2.0.0
     dev: true
 
-  /terser/5.21.0:
-    resolution: {integrity: sha512-WtnFKrxu9kaoXuiZFSGrcAvvBqAdmKx0SFNmVNYdJamMu9yyN3I/QF0FbH4QcqJQ+y1CJnzxGIKH0cSj+FGYRw==}
+  /terser/5.22.0:
+    resolution: {integrity: sha512-hHZVLgRA2z4NWcN6aS5rQDc+7Dcy58HOf2zbYwmFcQ+ua3h6eEFf5lIDKTzbWwlazPyOZsFQO8V80/IjVNExEw==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
@@ -6879,7 +6879,7 @@ packages:
     peerDependencies:
       vite: '>=2.0.0'
     dependencies:
-      vite: 4.4.11_7fui6gdtt5tas67dqlf45pkpcy
+      vite: 4.4.11_pm563silht3rqck2p53k3oh3ha
     dev: true
 
   /vite-plugin-image-optimizer/1.1.7_vite@4.4.11:
@@ -6890,7 +6890,7 @@ packages:
     dependencies:
       ansi-colors: 4.1.3
       pathe: 1.1.1
-      vite: 4.4.11_7fui6gdtt5tas67dqlf45pkpcy
+      vite: 4.4.11_pm563silht3rqck2p53k3oh3ha
     dev: true
 
   /vite-plugin-minify/1.5.2_vite@4.4.11:
@@ -6899,7 +6899,7 @@ packages:
       vite: '*'
     dependencies:
       html-minifier-terser: 6.1.0
-      vite: 4.4.11_7fui6gdtt5tas67dqlf45pkpcy
+      vite: 4.4.11_pm563silht3rqck2p53k3oh3ha
     dev: true
 
   /vite-plugin-pwa/0.16.5_s2ecpzg3r2jwyezmmp52r2e3jy:
@@ -6913,14 +6913,14 @@ packages:
       debug: 4.3.4
       fast-glob: 3.3.1
       pretty-bytes: 6.1.1
-      vite: 4.4.11_7fui6gdtt5tas67dqlf45pkpcy
+      vite: 4.4.11_pm563silht3rqck2p53k3oh3ha
       workbox-build: 7.0.0
       workbox-window: 7.0.0
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /vite/4.4.11_7fui6gdtt5tas67dqlf45pkpcy:
+  /vite/4.4.11_pm563silht3rqck2p53k3oh3ha:
     resolution: {integrity: sha512-ksNZJlkcU9b0lBwAGZGGaZHCMqHsc8OpgtoYhsQ4/I2v5cnpmmmqe5pM4nv/4Hn6G/2GhTdj0DhZh2e+Er1q5A==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -6952,7 +6952,7 @@ packages:
       esbuild: 0.18.20
       postcss: 8.4.31
       rollup: 3.29.4
-      terser: 5.21.0
+      terser: 5.22.0
     optionalDependencies:
       fsevents: 2.3.3
     dev: true

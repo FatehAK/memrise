@@ -1207,7 +1207,7 @@ packages:
       '@babel/preset-modules': 0.1.6-no-external-plugins_@babel+core@7.23.2
       '@babel/types': 7.23.0
       babel-plugin-polyfill-corejs2: 0.4.6_@babel+core@7.23.2
-      babel-plugin-polyfill-corejs3: 0.8.5_@babel+core@7.23.2
+      babel-plugin-polyfill-corejs3: 0.8.6_@babel+core@7.23.2
       babel-plugin-polyfill-regenerator: 0.5.3_@babel+core@7.23.2
       core-js-compat: 3.33.1
       semver: 6.3.1
@@ -1995,8 +1995,8 @@ packages:
       eslint-visitor-keys: 3.4.3
     dev: true
 
-  /@eslint-community/regexpp/4.9.1:
-    resolution: {integrity: sha512-Y27x+MBLjXa+0JWDhykM3+JE+il3kHKAEqabfEWq3SDhZjLYb6/BHL/JKFnH3fe207JaXkyDo685Oc2Glt6ifA==}
+  /@eslint-community/regexpp/4.10.0:
+    resolution: {integrity: sha512-Cu96Sd2By9mCNTx2iyKOmq10v22jUVQv0lQnlGNy16oE9589yE+QADPbrMGCkA51cKZSg3Pu/aTJVTGfL/qjUA==}
     engines: {node: ^12.0.0 || ^14.0.0 || >=16.0.0}
     dev: true
 
@@ -2283,10 +2283,10 @@ packages:
     resolution: {integrity: sha512-4tT2UrL5LBqDwoed9wZ6N3umC4Yhz3W3FloMmiiG4JwmUJWpie0c7lcnUNd4gtMKuDEO4wRVS8B6Xa0uMRsMKg==}
     dev: true
 
-  /@types/node/20.8.7:
-    resolution: {integrity: sha512-21TKHHh3eUHIi2MloeptJWALuCu5H7HQTdTrWIFReA8ad+aggoX+lRes3ex7/FtpC+sVUpFMQ+QTfYr74mruiQ==}
+  /@types/node/20.8.9:
+    resolution: {integrity: sha512-UzykFsT3FhHb1h7yD4CA4YhBHq545JC0YnEz41xkipN88eKQtL6rSgocL5tbAP6Ola9Izm/Aw4Ora8He4x0BHg==}
     dependencies:
-      undici-types: 5.25.3
+      undici-types: 5.26.5
     dev: true
 
   /@types/normalize-package-data/2.4.3:
@@ -2296,7 +2296,7 @@ packages:
   /@types/resolve/1.17.1:
     resolution: {integrity: sha512-yy7HuzQhj0dhGpD8RLXSZWEkLsV9ibvxvi6EiJ3bkqLAO1RGo0WbkWQiwpRlSFymTJRz0d3k5LM3kkx8ArDbLw==}
     dependencies:
-      '@types/node': 20.8.7
+      '@types/node': 20.8.9
     dev: true
 
   /@types/trusted-types/2.0.5:
@@ -2335,21 +2335,21 @@ packages:
       through: 2.3.8
     dev: true
 
-  /acorn-jsx/5.3.2_acorn@8.10.0:
+  /acorn-jsx/5.3.2_acorn@8.11.2:
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
     peerDependencies:
       acorn: ^6.0.0 || ^7.0.0 || ^8.0.0
     dependencies:
-      acorn: 8.10.0
+      acorn: 8.11.2
     dev: true
 
-  /acorn-walk/8.2.0:
-    resolution: {integrity: sha512-k+iyHEuPgSw6SbuDpGQM+06HQUa04DZ3o+F6CSzXMvvI5KMvnaEqXe+YVe555R9nn6GPt404fos4wcgpw12SDA==}
+  /acorn-walk/8.3.0:
+    resolution: {integrity: sha512-FS7hV565M5l1R08MXqo8odwMTB02C2UqzB17RVgu9EyuYFBqJZ3/ZY97sQD5FewVu1UyDFc1yztUDrAwT0EypA==}
     engines: {node: '>=0.4.0'}
     dev: true
 
-  /acorn/8.10.0:
-    resolution: {integrity: sha512-F0SAmZ8iUtS//m8DmCTA0jlh6TDKkHQyK6xc6V4KDTyZKA9dnvX9/3sRTVQrWm79glUAZbnmmNcdYwUIHWVybw==}
+  /acorn/8.11.2:
+    resolution: {integrity: sha512-nc0Axzp/0FILLEVsm4fNwLCwMttvhEI263QtVPQcbpfZZ3ts0hLsZGOpE6czNlid7CJ9MlyH8reXkpsf3YUY4w==}
     engines: {node: '>=0.4.0'}
     hasBin: true
     dev: true
@@ -2526,7 +2526,7 @@ packages:
       postcss: ^8.1.0
     dependencies:
       browserslist: 4.22.1
-      caniuse-lite: 1.0.30001553
+      caniuse-lite: 1.0.30001558
       fraction.js: 4.3.7
       normalize-range: 0.1.2
       picocolors: 1.0.0
@@ -2556,8 +2556,8 @@ packages:
       - supports-color
     dev: true
 
-  /babel-plugin-polyfill-corejs3/0.8.5_@babel+core@7.23.2:
-    resolution: {integrity: sha512-Q6CdATeAvbScWPNLB8lzSO7fgUVBkQt6zLgNlfyeCr/EQaEQR+bWiBYYPYAFyE528BMjRhL+1QBMOI4jc/c5TA==}
+  /babel-plugin-polyfill-corejs3/0.8.6_@babel+core@7.23.2:
+    resolution: {integrity: sha512-leDIc4l4tUgU7str5BWLS2h8q2N4Nf6lGZP6UrNDxdtfF2g69eJ5L0H7S8A5Ln/arfFAfHor5InAdZuIOwZdgQ==}
     peerDependencies:
       '@babel/core': ^7.4.0 || ^8.0.0-0 <8.0.0
     dependencies:
@@ -2635,8 +2635,8 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001553
-      electron-to-chromium: 1.4.563
+      caniuse-lite: 1.0.30001558
+      electron-to-chromium: 1.4.569
       node-releases: 2.0.13
       update-browserslist-db: 1.0.13_browserslist@4.22.1
     dev: true
@@ -2712,8 +2712,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /caniuse-lite/1.0.30001553:
-    resolution: {integrity: sha512-N0ttd6TrFfuqKNi+pMgWJTb9qrdJu4JSpgPFLe/lrD19ugC6fZgF0pUewRowDwzdDnb9V41mFcdlYgl/PyKf4A==}
+  /caniuse-lite/1.0.30001558:
+    resolution: {integrity: sha512-/Et7DwLqpjS47JPEcz6VnxU9PwcIdVi0ciLXRWBQdj1XFye68pSQYpV0QtPTfUKWuOaEig+/Vez2l74eDc1tPQ==}
     dev: true
 
   /capital-case/1.0.4:
@@ -3254,8 +3254,8 @@ packages:
       jake: 10.8.7
     dev: true
 
-  /electron-to-chromium/1.4.563:
-    resolution: {integrity: sha512-dg5gj5qOgfZNkPNeyKBZQAQitIQ/xwfIDmEQJHCbXaD9ebTZxwJXUsDYcBlAvZGZLi+/354l35J1wkmP6CqYaw==}
+  /electron-to-chromium/1.4.569:
+    resolution: {integrity: sha512-LsrJjZ0IbVy12ApW3gpYpcmHS3iRxH4bkKOW98y1/D+3cvDUWGcbzbsFinfUS8knpcZk/PG/2p/RnkMCYN7PVg==}
     dev: true
 
   /emoji-regex/8.0.0:
@@ -3643,7 +3643,7 @@ packages:
     hasBin: true
     dependencies:
       '@eslint-community/eslint-utils': 4.4.0_eslint@8.52.0
-      '@eslint-community/regexpp': 4.9.1
+      '@eslint-community/regexpp': 4.10.0
       '@eslint/eslintrc': 2.1.2
       '@eslint/js': 8.52.0
       '@humanwhocodes/config-array': 0.11.13
@@ -3688,8 +3688,8 @@ packages:
     resolution: {integrity: sha512-oruZaFkjorTpF32kDSI5/75ViwGeZginGGy2NoOSg3Q9bnwlnmDm4HLnkl0RE3n+njDXR037aY1+x58Z/zFdwQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dependencies:
-      acorn: 8.10.0
-      acorn-jsx: 5.3.2_acorn@8.10.0
+      acorn: 8.11.2
+      acorn-jsx: 5.3.2_acorn@8.11.2
       eslint-visitor-keys: 3.4.3
     dev: true
 
@@ -4505,7 +4505,7 @@ packages:
     resolution: {integrity: sha512-KWYVV1c4i+jbMpaBC+U++4Va0cp8OisU185o73T1vo99hqi7w8tSJfUXYswwqqrjzwxa6KpRK54WhPvwf5w6PQ==}
     engines: {node: '>= 10.13.0'}
     dependencies:
-      '@types/node': 20.8.7
+      '@types/node': 20.8.9
       merge-stream: 2.0.0
       supports-color: 7.2.0
     dev: true
@@ -6608,7 +6608,7 @@ packages:
     hasBin: true
     dependencies:
       '@jridgewell/source-map': 0.3.5
-      acorn: 8.10.0
+      acorn: 8.11.2
       commander: 2.20.3
       source-map-support: 0.5.21
     dev: true
@@ -6685,8 +6685,8 @@ packages:
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.4
       '@types/node': 20.5.1
-      acorn: 8.10.0
-      acorn-walk: 8.2.0
+      acorn: 8.11.2
+      acorn-walk: 8.3.0
       arg: 4.1.3
       create-require: 1.1.1
       diff: 4.0.2
@@ -6810,8 +6810,8 @@ packages:
       which-boxed-primitive: 1.0.2
     dev: true
 
-  /undici-types/5.25.3:
-    resolution: {integrity: sha512-Ga1jfYwRn7+cP9v8auvEXN1rX3sWqlayd4HP7OKk4mZWylEmu3KzXDUGrQUN6Ol7qo1gPvB2e5gX6udnyEPgdA==}
+  /undici-types/5.26.5:
+    resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
     dev: true
 
   /unicode-canonical-property-names-ecmascript/2.0.0:

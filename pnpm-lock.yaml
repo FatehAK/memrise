@@ -37,7 +37,7 @@ specifiers:
   stylelint-declaration-block-no-ignored-properties: ^2.7.0
   stylelint-formatter-pretty: ^3.2.1
   stylelint-order: ^6.0.3
-  svgo: ^3.0.2
+  svgo: ^3.0.3
   terser: ^5.24.0
   vite: ^4.5.0
   vite-plugin-html-config: ^1.0.11
@@ -84,7 +84,7 @@ devDependencies:
   stylelint-declaration-block-no-ignored-properties: 2.7.0_stylelint@15.11.0
   stylelint-formatter-pretty: 3.2.1
   stylelint-order: 6.0.3_stylelint@15.11.0
-  svgo: 3.0.2
+  svgo: 3.0.3
   terser: 5.24.0
   vite: 4.5.0_7eqchxxn5fkw6m6lbsm543nzua
   vite-plugin-html-config: 1.0.11_vite@4.5.0
@@ -6523,8 +6523,8 @@ packages:
     resolution: {integrity: sha512-ovssysQTa+luh7A5Weu3Rta6FJlFBBbInjOh722LIt6klpU2/HtdUbszju/G4devcvk8PGt7FCLv5wftu3THUA==}
     dev: true
 
-  /svgo/3.0.2:
-    resolution: {integrity: sha512-Z706C1U2pb1+JGP48fbazf3KxHrWOsLme6Rv7imFBn5EnuanDW1GPaA/P1/dvObE670JDePC3mnj0k0B7P0jjQ==}
+  /svgo/3.0.3:
+    resolution: {integrity: sha512-X4UZvLhOglD5Xrp834HzGHf8RKUW0Ahigg/08yRO1no9t2NxffOkMiQ0WmaMIbaGlVTlSst2zWANsdhz5ybXgA==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:

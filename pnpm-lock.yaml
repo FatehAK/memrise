@@ -37,13 +37,13 @@ specifiers:
   stylelint-declaration-block-no-ignored-properties: ^2.7.0
   stylelint-formatter-pretty: ^3.2.1
   stylelint-order: ^6.0.3
-  svgo: ^3.0.3
+  svgo: ^3.0.4
   terser: ^5.24.0
   vite: ^4.5.0
   vite-plugin-html-config: ^1.0.11
   vite-plugin-image-optimizer: ^1.1.7
   vite-plugin-minify: ^1.5.2
-  vite-plugin-pwa: ^0.16.7
+  vite-plugin-pwa: ^0.17.0
 
 dependencies:
   sanitize.css: 13.0.0
@@ -84,13 +84,13 @@ devDependencies:
   stylelint-declaration-block-no-ignored-properties: 2.7.0_stylelint@15.11.0
   stylelint-formatter-pretty: 3.2.1
   stylelint-order: 6.0.3_stylelint@15.11.0
-  svgo: 3.0.3
+  svgo: 3.0.4
   terser: 5.24.0
   vite: 4.5.0_7eqchxxn5fkw6m6lbsm543nzua
   vite-plugin-html-config: 1.0.11_vite@4.5.0
   vite-plugin-image-optimizer: 1.1.7_vite@4.5.0
   vite-plugin-minify: 1.5.2_vite@4.5.0
-  vite-plugin-pwa: 0.16.7_7er6poksrfuuodlyeoowv4hplm
+  vite-plugin-pwa: 0.17.0_7er6poksrfuuodlyeoowv4hplm
 
 packages:
 
@@ -6536,8 +6536,8 @@ packages:
     resolution: {integrity: sha512-ovssysQTa+luh7A5Weu3Rta6FJlFBBbInjOh722LIt6klpU2/HtdUbszju/G4devcvk8PGt7FCLv5wftu3THUA==}
     dev: true
 
-  /svgo/3.0.3:
-    resolution: {integrity: sha512-X4UZvLhOglD5Xrp834HzGHf8RKUW0Ahigg/08yRO1no9t2NxffOkMiQ0WmaMIbaGlVTlSst2zWANsdhz5ybXgA==}
+  /svgo/3.0.4:
+    resolution: {integrity: sha512-T+Xul3JwuJ6VGXKo/p2ndqx1ibxNKnLTvRc1ZTWKCfyKS/GgNjRZcYsK84fxTsy/izr91g/Rwx6fGnVgaFSI5g==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
@@ -6545,6 +6545,7 @@ packages:
       commander: 7.2.0
       css-select: 5.1.0
       css-tree: 2.3.1
+      css-what: 6.1.0
       csso: 5.0.5
       picocolors: 1.0.0
     dev: true
@@ -6940,11 +6941,11 @@ packages:
       vite: 4.5.0_7eqchxxn5fkw6m6lbsm543nzua
     dev: true
 
-  /vite-plugin-pwa/0.16.7_7er6poksrfuuodlyeoowv4hplm:
-    resolution: {integrity: sha512-4WMA5unuKlHs+koNoykeuCfTcqEGbiTRr8sVYUQMhc6tWxZpSRnv9Ojk4LKmqVhoPGHfBVCdGaMo8t9Qidkc1Q==}
+  /vite-plugin-pwa/0.17.0_7er6poksrfuuodlyeoowv4hplm:
+    resolution: {integrity: sha512-cOyEG8EEc7JHmyMapTnjK2j0g2BIC3ErlmOHyGzVu8hqjyF9Jt6yWMmVNFtpA6v/NNyzP28ARf3vwzIAzR1kaw==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
-      vite: ^3.1.0 || ^4.0.0 || ^5.0.0-0
+      vite: ^3.1.0 || ^4.0.0 || ^5.0.0
       workbox-build: ^7.0.0
       workbox-window: ^7.0.0
     dependencies:

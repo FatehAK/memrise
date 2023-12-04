@@ -43,7 +43,7 @@ specifiers:
   vite-plugin-html-config: ^1.0.11
   vite-plugin-image-optimizer: ^1.1.7
   vite-plugin-minify: ^1.5.2
-  vite-plugin-pwa: ^0.17.2
+  vite-plugin-pwa: ^0.17.3
 
 dependencies:
   sanitize.css: 13.0.0
@@ -90,7 +90,7 @@ devDependencies:
   vite-plugin-html-config: 1.0.11_vite@4.5.1
   vite-plugin-image-optimizer: 1.1.7_vite@4.5.1
   vite-plugin-minify: 1.5.2_vite@4.5.1
-  vite-plugin-pwa: 0.17.2_yocjqpsdrtfaiwlzmfvgfa4boq
+  vite-plugin-pwa: 0.17.3_yocjqpsdrtfaiwlzmfvgfa4boq
 
 packages:
 
@@ -6954,8 +6954,8 @@ packages:
       vite: 4.5.1_5cvrf47si4r5dlg5qk4xg7bxbm
     dev: true
 
-  /vite-plugin-pwa/0.17.2_yocjqpsdrtfaiwlzmfvgfa4boq:
-    resolution: {integrity: sha512-aVH9sxcTDumiWYiNcLrFqu+FdL79I2cT5EhlVe5V6nGcC64yQNGT1jamMytwi+OdfXl4VYic0LtoJ6JHMkM3ZQ==}
+  /vite-plugin-pwa/0.17.3_yocjqpsdrtfaiwlzmfvgfa4boq:
+    resolution: {integrity: sha512-ilOs0mGxIxKQN3FZYX8pys5DmY/wI9A6oojlY5rrd7mAxCVcSbtjDVAhm62C+3Ww6KQrNr/jmiRUCplC8AsaBw==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       vite: ^3.1.0 || ^4.0.0 || ^5.0.0

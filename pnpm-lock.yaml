@@ -9,7 +9,7 @@ specifiers:
   browserslist-to-esbuild: ^1.2.0
   change-case: ^4.1.2
   concurrently: ^8.2.2
-  czg: 1.7.1
+  czg: 1.8.0
   eslint: ^8.55.0
   eslint-config-prettier: ^8.10.0
   eslint-config-semistandard: ^17.0.0
@@ -57,7 +57,7 @@ devDependencies:
   browserslist-to-esbuild: 1.2.0
   change-case: 4.1.2
   concurrently: 8.2.2
-  czg: 1.7.1
+  czg: 1.8.0
   eslint: 8.55.0
   eslint-config-prettier: 8.10.0_eslint@8.55.0
   eslint-config-semistandard: 17.0.0_usrirq2umk2dz55gmx5uivwu54
@@ -3247,8 +3247,8 @@ packages:
       css-tree: 2.2.1
     dev: true
 
-  /czg/1.7.1:
-    resolution: {integrity: sha512-KP93cTbZxgWYDKJzZpjnLe0sy/2FwyegatnrOaqsath04WinvsdhZl5QCGkxTKBY2DavpKloIBW/WGZzCKmrlA==}
+  /czg/1.8.0:
+    resolution: {integrity: sha512-vLX3AIUaE30C/qkeuL+g1fcdjZ72vBdON12E4V4vmuTKKe7OMoQ2MxBYbWhl5OP28+ggCrajxGBk6bdjIn5LgQ==}
     engines: {node: '>=v12.20.0'}
     hasBin: true
     dev: true

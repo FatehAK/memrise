@@ -36,7 +36,7 @@ specifiers:
   stylelint-config-standard: ^33.0.0
   stylelint-declaration-block-no-ignored-properties: ^2.7.0
   stylelint-formatter-pretty: ^3.2.1
-  stylelint-order: ^6.0.3
+  stylelint-order: ^6.0.4
   svgo: ^3.0.5
   terser: ^5.26.0
   vite: ^4.5.1
@@ -83,7 +83,7 @@ devDependencies:
   stylelint-config-standard: 33.0.0_stylelint@15.11.0
   stylelint-declaration-block-no-ignored-properties: 2.7.0_stylelint@15.11.0
   stylelint-formatter-pretty: 3.2.1
-  stylelint-order: 6.0.3_stylelint@15.11.0
+  stylelint-order: 6.0.4_stylelint@15.11.0
   svgo: 3.0.5
   terser: 5.26.0
   vite: 4.5.1_fkaxc4vxmktgbzirdhhf2q2v3e
@@ -6433,7 +6433,7 @@ packages:
       stylelint: '>=14'
     dependencies:
       stylelint: 15.11.0_typescript@5.3.2
-      stylelint-order: 6.0.3_stylelint@15.11.0
+      stylelint-order: 6.0.4_stylelint@15.11.0
     dev: true
 
   /stylelint-config-html/1.1.0_v42hhpfof2u3ss6y4puwysgglm:
@@ -6485,10 +6485,10 @@ packages:
       supports-hyperlinks: 3.0.0
     dev: true
 
-  /stylelint-order/6.0.3_stylelint@15.11.0:
-    resolution: {integrity: sha512-1j1lOb4EU/6w49qZeT2SQVJXm0Ht+Qnq9GMfUa3pMwoyojIWfuA+JUDmoR97Bht1RLn4ei0xtLGy87M7d29B1w==}
+  /stylelint-order/6.0.4_stylelint@15.11.0:
+    resolution: {integrity: sha512-0UuKo4+s1hgQ/uAxlYU4h0o0HS4NiQDud0NAUNI0aa8FJdmYHA5ZZTFHiV5FpmE3071e9pZx5j0QpVJW5zOCUA==}
     peerDependencies:
-      stylelint: ^14.0.0 || ^15.0.0
+      stylelint: ^14.0.0 || ^15.0.0 || ^16.0.1
     dependencies:
       postcss: 8.4.32
       postcss-sorting: 8.0.2_postcss@8.4.32

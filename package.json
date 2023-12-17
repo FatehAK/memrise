@@ -61,7 +61,7 @@
     "prettier": "^2.8.8",
     "rimraf": "^5.0.5",
     "rollup-plugin-visualizer": "^5.11.0",
-    "sharp": "^0.33.0",
+    "sharp": "^0.33.1",
     "stylelint": "^15.11.0",
     "stylelint-config-clean-order": "^5.2.0",
     "stylelint-config-html": "^1.1.0",

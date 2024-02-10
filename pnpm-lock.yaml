@@ -43,7 +43,7 @@ specifiers:
   vite-plugin-html-config: ^1.0.11
   vite-plugin-image-optimizer: ^1.1.7
   vite-plugin-minify: ^1.5.2
-  vite-plugin-pwa: ^0.17.5
+  vite-plugin-pwa: ^0.18.0
 
 dependencies:
   sanitize.css: 13.0.0
@@ -90,7 +90,7 @@ devDependencies:
   vite-plugin-html-config: 1.0.11_vite@4.5.2
   vite-plugin-image-optimizer: 1.1.7_vite@4.5.2
   vite-plugin-minify: 1.5.2_vite@4.5.2
-  vite-plugin-pwa: 0.17.5_eoprwse6dh3urxrfjumoslnuru
+  vite-plugin-pwa: 0.18.0_eoprwse6dh3urxrfjumoslnuru
 
 packages:
 
@@ -6964,8 +6964,8 @@ packages:
       vite: 4.5.2_4f2d672vojdjxx6naxmi7zvugm
     dev: true
 
-  /vite-plugin-pwa/0.17.5_eoprwse6dh3urxrfjumoslnuru:
-    resolution: {integrity: sha512-UxRNPiJBzh4tqU/vc8G2TxmrUTzT6BqvSzhszLk62uKsf+npXdvLxGDz9C675f4BJi6MbD2tPnJhi5txlMzxbQ==}
+  /vite-plugin-pwa/0.18.0_eoprwse6dh3urxrfjumoslnuru:
+    resolution: {integrity: sha512-4ReE3KHz3sSXT3o0kpcNHirOYPbbCcnOgJGZX64jFxOvaOmkHXEorm5h1b6XU6/i48f2xzurSGU7w2+4HnziMQ==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       vite: ^3.1.0 || ^4.0.0 || ^5.0.0
@@ -7145,6 +7145,7 @@ packages:
 
   /workbox-google-analytics/7.0.0:
     resolution: {integrity: sha512-MEYM1JTn/qiC3DbpvP2BVhyIH+dV/5BjHk756u9VbwuAhu0QHyKscTnisQuz21lfRpOwiS9z4XdqeVAKol0bzg==}
+    deprecated: It is not compatible with newer versions of GA starting with v4, as long as you are using GAv3 it should be ok, but the package is not longer being maintained
     dependencies:
       workbox-background-sync: 7.0.0
       workbox-core: 7.0.0

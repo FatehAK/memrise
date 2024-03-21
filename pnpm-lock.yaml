@@ -43,7 +43,7 @@ specifiers:
   vite-plugin-html-config: ^1.0.11
   vite-plugin-image-optimizer: ^1.1.7
   vite-plugin-minify: ^1.5.2
-  vite-plugin-pwa: ^0.19.5
+  vite-plugin-pwa: ^0.19.6
 
 dependencies:
   sanitize.css: 13.0.0
@@ -90,7 +90,7 @@ devDependencies:
   vite-plugin-html-config: 1.0.11_vite@4.5.2
   vite-plugin-image-optimizer: 1.1.7_vite@4.5.2
   vite-plugin-minify: 1.5.2_vite@4.5.2
-  vite-plugin-pwa: 0.19.5_eoprwse6dh3urxrfjumoslnuru
+  vite-plugin-pwa: 0.19.6_eoprwse6dh3urxrfjumoslnuru
 
 packages:
 
@@ -6501,7 +6501,7 @@ packages:
     dependencies:
       call-bind: 1.0.7
       define-properties: 1.2.1
-      es-abstract: 1.22.5
+      es-abstract: 1.23.1
       get-intrinsic: 1.2.4
       has-symbols: 1.0.3
       internal-slot: 1.0.7
@@ -7141,8 +7141,8 @@ packages:
       vite: 4.5.2_ztkq6tnxhpjbszcgcobfdscwnm
     dev: true
 
-  /vite-plugin-pwa/0.19.5_eoprwse6dh3urxrfjumoslnuru:
-    resolution: {integrity: sha512-3xJEc2Gmq6SBf730UAV1N2/MqOm+MiyvaLToSTglg+pH9b9qm666yPVxrBBlcOhGoJJWjJpu+Z9tROKek2CODg==}
+  /vite-plugin-pwa/0.19.6_eoprwse6dh3urxrfjumoslnuru:
+    resolution: {integrity: sha512-3hoxgrDGRzh1vidcZ/GSKXBDiZqbL8DRHXkJgkbJ2Xp3+/P4nau6118L5XlJJsm/wXPpwc/JpDj6Mf073s69+A==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       '@vite-pwa/assets-generator': ^0.2.4

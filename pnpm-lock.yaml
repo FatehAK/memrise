@@ -43,7 +43,7 @@ specifiers:
   vite-plugin-html-config: ^1.0.11
   vite-plugin-image-optimizer: ^1.1.7
   vite-plugin-minify: ^1.5.2
-  vite-plugin-pwa: ^0.19.8
+  vite-plugin-pwa: ^0.20.0
 
 dependencies:
   sanitize.css: 13.0.0
@@ -90,7 +90,7 @@ devDependencies:
   vite-plugin-html-config: 1.0.11_vite@4.5.3
   vite-plugin-image-optimizer: 1.1.7_vite@4.5.3
   vite-plugin-minify: 1.5.2_vite@4.5.3
-  vite-plugin-pwa: 0.19.8_au74rrxlpyhw4visbrz57zn42u
+  vite-plugin-pwa: 0.20.0_au74rrxlpyhw4visbrz57zn42u
 
 packages:
 
@@ -7072,14 +7072,14 @@ packages:
       vite: 4.5.3_taxnkre2t3crlt4674ezbqfdby
     dev: true
 
-  /vite-plugin-pwa/0.19.8_au74rrxlpyhw4visbrz57zn42u:
-    resolution: {integrity: sha512-e1oK0dfhzhDhY3VBuML6c0h8Xfx6EkOVYqolj7g+u8eRfdauZe5RLteCIA/c5gH0CBQ0CNFAuv/AFTx4Z7IXTw==}
+  /vite-plugin-pwa/0.20.0_au74rrxlpyhw4visbrz57zn42u:
+    resolution: {integrity: sha512-/kDZyqF8KqoXRpMUQtR5Atri/7BWayW8Gp7Kz/4bfstsV6zSFTxjREbXZYL7zSuRL40HGA+o2hvUAFRmC+bL7g==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       '@vite-pwa/assets-generator': ^0.2.4
       vite: ^3.1.0 || ^4.0.0 || ^5.0.0
-      workbox-build: ^7.0.0
-      workbox-window: ^7.0.0
+      workbox-build: ^7.1.0
+      workbox-window: ^7.1.0
     peerDependenciesMeta:
       '@vite-pwa/assets-generator':
         optional: true

@@ -18,7 +18,7 @@ specifiers:
   eslint-plugin-html: ^7.1.0
   eslint-plugin-import: ^2.29.1
   eslint-plugin-only-warn: ^1.1.0
-  eslint-plugin-promise: ^6.1.1
+  eslint-plugin-promise: ^6.2.0
   eslint-plugin-sonarjs: ^0.25.1
   husky: ^8.0.3
   lint-staged: ^13.3.0
@@ -60,13 +60,13 @@ devDependencies:
   czg: 1.9.2
   eslint: 8.57.0
   eslint-config-prettier: 8.10.0_eslint@8.57.0
-  eslint-config-semistandard: 17.0.0_mx45p2uubdbb2ernoytsrzh564
+  eslint-config-semistandard: 17.0.0_2ctso64cqdoeqw45htrbt6fu2q
   eslint-formatter-pretty: 5.0.0
   eslint-import-resolver-alias: 1.1.2_gblj7z6526q5ff7xdcrfk7bm7e
   eslint-plugin-html: 7.1.0
   eslint-plugin-import: 2.29.1_eslint@8.57.0
   eslint-plugin-only-warn: 1.1.0
-  eslint-plugin-promise: 6.1.1_eslint@8.57.0
+  eslint-plugin-promise: 6.2.0_eslint@8.57.0
   eslint-plugin-sonarjs: 0.25.1_eslint@8.57.0
   husky: 8.0.3
   lint-staged: 13.3.0
@@ -3657,7 +3657,7 @@ packages:
       eslint: 8.57.0
     dev: true
 
-  /eslint-config-semistandard/17.0.0_mx45p2uubdbb2ernoytsrzh564:
+  /eslint-config-semistandard/17.0.0_2ctso64cqdoeqw45htrbt6fu2q:
     resolution: {integrity: sha512-tLi0JYmfiiJgtmRhoES55tENatR7y/5aXOh6cBeW+qjzl1+WwyV0arDqR65XN3/xrPZt+/1EG+xNLknV/0jWsQ==}
     peerDependencies:
       eslint: ^8.13.0
@@ -3667,13 +3667,13 @@ packages:
       eslint-plugin-promise: ^6.0.0
     dependencies:
       eslint: 8.57.0
-      eslint-config-standard: 17.1.0_ko4kq7vgiw3q2cxrg5q2s2zogm
+      eslint-config-standard: 17.1.0_mbv3er6h6pferjthiynk7eb7f4
       eslint-plugin-import: 2.29.1_eslint@8.57.0
       eslint-plugin-n: 15.7.0_eslint@8.57.0
-      eslint-plugin-promise: 6.1.1_eslint@8.57.0
+      eslint-plugin-promise: 6.2.0_eslint@8.57.0
     dev: true
 
-  /eslint-config-standard/17.1.0_ko4kq7vgiw3q2cxrg5q2s2zogm:
+  /eslint-config-standard/17.1.0_mbv3er6h6pferjthiynk7eb7f4:
     resolution: {integrity: sha512-IwHwmaBNtDK4zDHQukFDW5u/aTb8+meQWZvNFWkiGmbWjD6bqyuSSBxxXKkCftCUzc1zwCH2m/baCNDLGmuO5Q==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
@@ -3685,7 +3685,7 @@ packages:
       eslint: 8.57.0
       eslint-plugin-import: 2.29.1_eslint@8.57.0
       eslint-plugin-n: 15.7.0_eslint@8.57.0
-      eslint-plugin-promise: 6.1.1_eslint@8.57.0
+      eslint-plugin-promise: 6.2.0_eslint@8.57.0
     dev: true
 
   /eslint-formatter-pretty/5.0.0:
@@ -3822,11 +3822,11 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /eslint-plugin-promise/6.1.1_eslint@8.57.0:
-    resolution: {integrity: sha512-tjqWDwVZQo7UIPMeDReOpUgHCmCiH+ePnVT+5zVapL0uuHnegBUs2smM13CzOs2Xb5+MHMRFTs9v24yjba4Oig==}
+  /eslint-plugin-promise/6.2.0_eslint@8.57.0:
+    resolution: {integrity: sha512-QmAqwizauvnKOlifxyDj2ObfULpHQawlg/zQdgEixur9vl0CvZGv/LCJV2rtj3210QCoeGBzVMfMXqGAOr/4fA==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     peerDependencies:
-      eslint: ^7.0.0 || ^8.0.0
+      eslint: ^7.0.0 || ^8.0.0 || ^9.0.0
     dependencies:
       eslint: 8.57.0
     dev: true

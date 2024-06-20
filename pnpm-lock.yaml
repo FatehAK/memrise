@@ -2,8 +2,8 @@ lockfileVersion: 5.4
 
 specifiers:
   '@commitlint/cli': ^17.8.1
-  '@html-eslint/eslint-plugin': ^0.24.1
-  '@html-eslint/parser': ^0.24.1
+  '@html-eslint/eslint-plugin': ^0.25.0
+  '@html-eslint/parser': ^0.25.0
   '@rollup/plugin-strip': ^3.0.4
   '@vitejs/plugin-legacy': ^4.1.1
   browserslist-to-esbuild: ^1.2.0
@@ -50,8 +50,8 @@ dependencies:
 
 devDependencies:
   '@commitlint/cli': 17.8.1
-  '@html-eslint/eslint-plugin': 0.24.1
-  '@html-eslint/parser': 0.24.1
+  '@html-eslint/eslint-plugin': 0.25.0
+  '@html-eslint/parser': 0.25.0
   '@rollup/plugin-strip': 3.0.4_rollup@2.79.1
   '@vitejs/plugin-legacy': 4.1.1_terser@5.31.1+vite@4.5.3
   browserslist-to-esbuild: 1.2.0
@@ -2116,13 +2116,13 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /@html-eslint/eslint-plugin/0.24.1:
-    resolution: {integrity: sha512-JwNDQBrNIWEPcxgSpla/2jaUXyQCqL7Xp8CmON4Bk5qg8MwiDLXOgjylfVC+tN52i8JeHWMca34I9DqBGRj9Qg==}
+  /@html-eslint/eslint-plugin/0.25.0:
+    resolution: {integrity: sha512-5DlvqO8bbe90cKSfFDuEblyrEnhAdgNTjWxXeUxt/XXC2OuMC8CsxzLZjtK3+0X6yM8m4xcE3fymCPwg7zdcXQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /@html-eslint/parser/0.24.1:
-    resolution: {integrity: sha512-O13xX/+Ldh0P7VZMpDDYc3XtWiE1cYm5QhVJ0VB5i7D8Q69HrrGN+5BjS17vkCoLTz+3zWWIiJv4oFmyS5LReA==}
+  /@html-eslint/parser/0.25.0:
+    resolution: {integrity: sha512-dj6U1klMorS/g1QFI6j15AXknsqMDtdingSF6Sdtm1Z7WOVISfDwVyeNbb+JLUG+ATo9aECPQP5A7MHqgP6J9A==}
     engines: {node: '>=8.10.0'}
     dependencies:
       es-html-parser: 0.0.9

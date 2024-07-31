@@ -26,7 +26,7 @@ specifiers:
   postcss-nested: ^6.2.0
   postcss-preset-env: ^8.5.1
   prettier: ^2.8.8
-  rimraf: ^5.0.9
+  rimraf: ^5.0.10
   rollup-plugin-visualizer: ^5.12.0
   sanitize.css: ^13.0.0
   sharp: ^0.33.4
@@ -74,7 +74,7 @@ devDependencies:
   postcss-nested: 6.2.0_postcss@8.4.40
   postcss-preset-env: 8.5.1_postcss@8.4.40
   prettier: 2.8.8
-  rimraf: 5.0.9
+  rimraf: 5.0.10
   rollup-plugin-visualizer: 5.12.0_rollup@2.79.1
   sharp: 0.33.4
   stylelint: 15.11.0_typescript@5.5.4
@@ -6195,9 +6195,8 @@ packages:
       glob: 7.2.3
     dev: true
 
-  /rimraf/5.0.9:
-    resolution: {integrity: sha512-3i7b8OcswU6CpU8Ej89quJD4O98id7TtVM5U4Mybh84zQXdrFmDLouWBEEaD/QfO3gDDfH+AGFCGsR7kngzQnA==}
-    engines: {node: 14 >=14.20 || 16 >=16.20 || >=18}
+  /rimraf/5.0.10:
+    resolution: {integrity: sha512-l0OE8wL34P4nJH/H2ffoaniAokM2qSmrtXHmlpvYr5AVVX8msAyW0l8NVJFDxlSK4u3Uh/f41cQheDVdnYijwQ==}
     hasBin: true
     dependencies:
       glob: 10.4.5

@@ -35,8 +35,8 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^17.8.1",
-    "@html-eslint/eslint-plugin": "^0.30.0",
-    "@html-eslint/parser": "^0.30.0",
+    "@html-eslint/eslint-plugin": "^0.31.0",
+    "@html-eslint/parser": "^0.31.0",
     "@rollup/plugin-strip": "^3.0.4",
     "@vitejs/plugin-legacy": "^4.1.1",
     "browserslist-to-esbuild": "^1.2.0",

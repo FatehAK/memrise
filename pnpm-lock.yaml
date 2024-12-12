@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@commitlint/cli': ^17.8.1
-  '@html-eslint/eslint-plugin': ^0.31.0
+  '@html-eslint/eslint-plugin': ^0.31.1
   '@html-eslint/parser': ^0.31.0
   '@rollup/plugin-strip': ^3.0.4
   '@vitejs/plugin-legacy': ^4.1.1
@@ -50,7 +50,7 @@ dependencies:
 
 devDependencies:
   '@commitlint/cli': 17.8.1
-  '@html-eslint/eslint-plugin': 0.31.0
+  '@html-eslint/eslint-plugin': 0.31.1
   '@html-eslint/parser': 0.31.0
   '@rollup/plugin-strip': 3.0.4_rollup@2.79.2
   '@vitejs/plugin-legacy': 4.1.1_terser@5.37.0+vite@4.5.5
@@ -1916,8 +1916,8 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /@html-eslint/eslint-plugin/0.31.0:
-    resolution: {integrity: sha512-SkQgxy7Eu8TwXaMejntcJe5P9eWloaheHS4YZHAMXZvibD8dAt2zE1yCsh+BWvNibmyq9444zjF3JzdRam3OGQ==}
+  /@html-eslint/eslint-plugin/0.31.1:
+    resolution: {integrity: sha512-1DaqJmHx9Dnx9qAkJTTEhrV3uzxwO6ON+uCOK/zg7abxgrtnr1VzZQ+mnSI82oFyv9dfoee6DH+fJ3WF/ocLqA==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dependencies:
       '@html-eslint/template-parser': 0.31.0

@@ -2,8 +2,8 @@ lockfileVersion: 5.4
 
 specifiers:
   '@commitlint/cli': ^17.8.1
-  '@html-eslint/eslint-plugin': ^0.31.1
-  '@html-eslint/parser': ^0.31.0
+  '@html-eslint/eslint-plugin': ^0.32.0
+  '@html-eslint/parser': ^0.32.0
   '@rollup/plugin-strip': ^3.0.4
   '@vitejs/plugin-legacy': ^4.1.1
   browserslist-to-esbuild: ^1.2.0
@@ -50,8 +50,8 @@ dependencies:
 
 devDependencies:
   '@commitlint/cli': 17.8.1
-  '@html-eslint/eslint-plugin': 0.31.1
-  '@html-eslint/parser': 0.31.0
+  '@html-eslint/eslint-plugin': 0.32.0
+  '@html-eslint/parser': 0.32.0
   '@rollup/plugin-strip': 3.0.4_rollup@2.79.2
   '@vitejs/plugin-legacy': 4.1.1_terser@5.37.0+vite@4.5.5
   browserslist-to-esbuild: 1.2.0
@@ -1916,22 +1916,22 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /@html-eslint/eslint-plugin/0.31.1:
-    resolution: {integrity: sha512-1DaqJmHx9Dnx9qAkJTTEhrV3uzxwO6ON+uCOK/zg7abxgrtnr1VzZQ+mnSI82oFyv9dfoee6DH+fJ3WF/ocLqA==}
+  /@html-eslint/eslint-plugin/0.32.0:
+    resolution: {integrity: sha512-pHY0kGlSUn9G3qsEB11c/nK0tfHTeKTU2Su5dH+muNv9lr5K7O6Mo1dzTr96PNzTBXsDIkRpZ2k1TdNmgDR7YA==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dependencies:
-      '@html-eslint/template-parser': 0.31.0
+      '@html-eslint/template-parser': 0.32.0
     dev: true
 
-  /@html-eslint/parser/0.31.0:
-    resolution: {integrity: sha512-yBDMnk1XYNrA4nCSG2KGUAb2PQyajmQFfZQlZG8PVr3JxR/y8i45JIFsaxxBq3B5GtMOAIq2NEF604vl6LmzXA==}
+  /@html-eslint/parser/0.32.0:
+    resolution: {integrity: sha512-XSrc3rlIakRlJmFO3EpcVAiwJMfTFvjRZrpFr2jhX1E/Zjd/jPuYbKKXaY6ZLpeRQDtexFiKU+r8pa9DT2pd0A==}
     engines: {node: '>=8.10.0'}
     dependencies:
       es-html-parser: 1.0.0-alpha.4
     dev: true
 
-  /@html-eslint/template-parser/0.31.0:
-    resolution: {integrity: sha512-y4r401OpWsUYmo934uC8E5iLdVJrs5JRuJmkCp6rkNGILDwxj0fOhVmis0rxaCdVgO1i7QQm7SyTIgy1JO3G+Q==}
+  /@html-eslint/template-parser/0.32.0:
+    resolution: {integrity: sha512-+p0EdxmSC3CERw3uHYo9aMw4y6+Rk8YeNzhJP5ewfXpB6qZEeB3XD/6vhiK0NheOh1meGdiKvbYLvaMULRIr5A==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dependencies:
       es-html-parser: 1.0.0-alpha.4
